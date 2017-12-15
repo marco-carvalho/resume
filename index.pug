@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Document
+    body(ng-app='app')
+        .col-6.mx-auto
+            include src/header/view.pug
+            include src/resume/view.pug
+            include src/experiences/view.pug
+            .row.text-center
+                .col-12.col-md-6
+                    include src/education/view.pug
+                .col-12.col-md-6
+                    include src/languages/view.pug
+            include src/skills/view.pug
+            hr
+            include src/footer/view.pug
