@@ -1,0 +1,12 @@
+.text-center(ng-controller='headerController')
+    h1.m-0 {{header.name}}
+    p.m-0
+        a(href="mailto:{{header.mail}}") {{header.mail}}
+        span.mx-1 |
+        span +{{header.phone.CCC}} {{header.phone.cityCode}} {{header.phone.number}}
+    p
+        i.fa.fa-github.mr-1
+        a(href="https://github.com/{{header.github}}") {{header.github}}
+        span.mx-1 |
+        i.fa.fa-linkedin-square.mr-1
+        a(href="https://linkedin.com/in/{{header.linkedin}}") {{header.linkedin}}

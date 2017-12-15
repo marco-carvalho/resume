@@ -1,0 +1,7 @@
+div(ng-controller='languagesController')
+    h2 Idiomas
+    hr
+    div(ng-repeat='language in languages')
+        p.mb-0
+            strong.mr-1 {{language.name}}:
+            span {{language.level}}

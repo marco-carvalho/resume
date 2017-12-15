@@ -1,0 +1,12 @@
+div(ng-controller="educationController")
+    h2 Educação
+    hr
+    div(ng-repeat="education in educations")
+        p.mb-0
+            strong {{education.university}} - {{education.degree}}
+        p.mb-0
+            strong {{education.course}}
+        p.mb-3
+            span {{education.from.month}}/{{education.from.year}}
+            span.mx-1 -
+            span {{education.to.month}}/{{education.to.year}}
