@@ -1,13 +1,13 @@
 const autoprefixer = require('autoprefixer');
-const webpack = require('webpack');
-const path = require('path');
+// const webpack = require('webpack');
+// const path = require('path');
 const precss = require('precss');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: './app.ts'
+        app: './app.js'
     },
     output: {
         filename: 'bundle.js'
@@ -19,9 +19,12 @@ module.exports = {
                 loader: 'pug-loader'
             },
             {
-                test: /\.ts$/,
-                use: 'ts-loader',
-                exclude: /node_modules/
+                test: /\.js?$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                query: {
+                    presets: ['env']
+                }
             },
             {
                 test: /\.css$/,
@@ -31,34 +34,34 @@ module.exports = {
                 test: /\.(scss)$/,
                 use: [
                     {
-                        loader: 'style-loader', // inject CSS to page
+                        // inject CSS to page
+                        loader: 'style-loader'
                     },
                     {
-                        loader: 'css-loader', // translates CSS into CommonJS modules
+                        // translates CSS into CommonJS modules
+                        loader: 'css-loader'
                     },
                     {
-                        loader: 'postcss-loader', // Run post css actions
+                        // Run post css actions
+                        loader: 'postcss-loader',
                         options: {
-                            plugins: function () { // post css plugins, can be exported to postcss.config.js
-                                return [
-                                    precss,
-                                    autoprefixer
-                                ];
-                            }
+                            // post css plugins, can be exported to postcss.config.js
+                            plugins: () => [precss, autoprefixer]
                         }
                     },
                     {
-                        loader: 'sass-loader' // compiles SASS to CSS
+                        // compiles SASS to CSS
+                        loader: 'sass-loader'
                     }
                 ]
             },
             {
                 test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                use: 'url-loader?limit=10000',
+                use: 'url-loader?limit=10000'
             },
             {
                 test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-                use: 'file-loader',
+                use: 'file-loader'
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
@@ -86,7 +89,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.pug'
-        }),
+        })
         // new UglifyJSPlugin()
     ]
-}
+};
