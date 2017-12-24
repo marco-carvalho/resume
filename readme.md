@@ -9,3 +9,5 @@
 `npm i`
 
 `npm run server`
+
+BTW, this repository has a `gh-pages` branch that can be accessed through [here](https://marco-carvalho.github.io/resume/).
