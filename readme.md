@@ -1,3 +1,7 @@
+# resume
+
+[![dependencies Status](https://david-dm.org/marco-carvalho/resume/status.svg)](https://david-dm.org/marco-carvalho/resume)
+
 ## Requirements:
 `sudo apt install npm` or download [Node.js](https://nodejs.org/en/) and install NPM.
 
