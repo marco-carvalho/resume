@@ -1,14 +1,14 @@
 export default [
-    "$scope",
+    '$scope',
     function ($scope) {
         $scope.languages = [
             {
-                name: "Português",
-                level: "fluente"
+                name: 'Português',
+                level: 'fluente'
             },
             {
-                name: "Inglês",
-                level: "avançado"
+                name: 'Inglês',
+                level: 'avançado'
             }
         ];
     }
