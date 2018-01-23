@@ -1,19 +1,16 @@
 const autoprefixer = require('autoprefixer');
-// const webpack = require('webpack');
-// const path = require('path');
+const webpack = require('webpack');
 const precss = require('precss');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-    entry: {
-        app: './app.js'
-    },
+    entry: './app.js',
     output: {
         filename: 'bundle.js'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.pug$/,
                 loader: 'pug-loader'
@@ -28,31 +25,29 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader', 'postcss-loader']
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'postcss-loader'
+                ]
             },
             {
                 test: /\.(scss)$/,
                 use: [
-                    {
-                        // inject CSS to page
-                        loader: 'style-loader'
-                    },
-                    {
-                        // translates CSS into CommonJS modules
-                        loader: 'css-loader'
-                    },
+                    'style-loader',
+                    'css-loader',
                     {
                         // Run post css actions
                         loader: 'postcss-loader',
                         options: {
                             // post css plugins, can be exported to postcss.config.js
-                            plugins: () => [precss, autoprefixer]
+                            plugins: () => [
+                                precss,
+                                autoprefixer
+                            ]
                         }
                     },
-                    {
-                        // compiles SASS to CSS
-                        loader: 'sass-loader'
-                    }
+                    'sass-loader'
                 ]
             },
             {
@@ -73,22 +68,21 @@ module.exports = {
             {
                 test: /font-awesome\.config\.js/,
                 use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'font-awesome-loader'
-                    }
+                    'style-loader',
+                    'font-awesome-loader'
                 ]
             }
         ]
     },
-    resolve: {
-        extensions: ['.ts', '.js']
-    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.pug'
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+            Popper: ['popper.js', 'default']
         })
         // new UglifyJSPlugin()
     ]
