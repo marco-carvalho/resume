@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  div.text-center
     h2 Idiomas
     hr
     div(v-for='language in languages')
@@ -12,7 +12,7 @@
 export default {
   data () {
     return {
-      languages = [
+      languages: [
         {
           name: 'Português',
           level: 'fluente'

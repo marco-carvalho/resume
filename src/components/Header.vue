@@ -2,15 +2,15 @@
   .text-center
     h1.text-uppercase.m-0 {{name}}
     p.m-0
-      a(href="mailto:{{mail}}") {{mail}}
+      a(:href="'mailto:' + mail") {{mail}}
       span.mx-1 |
       span +{{phone.CCC}} {{phone.cityCode}} {{phone.number}}
     p
       i.fa.fa-github.mr-1
-      a(href="https://github.com/{{github}}") {{github}}
+      a(:href="'https://github.com/' + github") {{github}}
       span.mx-1 |
       i.fa.fa-linkedin-square.mr-1
-      a(href="https://linkedin.com/in/{{linkedin}}") {{linkedin}}
+      a(:href="'https://linkedin.com/in/' + linkedin") {{linkedin}}
 </template>
 
 <script>

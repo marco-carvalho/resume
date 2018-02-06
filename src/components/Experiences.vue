@@ -17,50 +17,50 @@
 <script>
   import moment from 'moment';
 
-export default {
-  data () {
-    return {
-      experiences = [
-        {
-          company: 'Banco Modal',
-          position: 'Estagiário em Desenvolvimento Web',
-          from: new Date(2017, 5),
-          to: new Date(2018, 5),
-          description: '',
-          tecnologies: [
-            "C# (Entity, WCF, Web API)",
-            "SQL (SQL Server)",
-            "PHP (Wordpress)",
-            "HTML (Pug)",
-            "CSS (Bootstrap)",
-            "Javascript (AngularJS, VueJS, Webpack, Gulp)"
-          ]
-        },
-        {
-          company: 'CEFET/RJ',
-          position: 'Bolsista de Iniciação Científica',
-          from: new Date(2017, 3),
-          to: new Date(2017, 7),
-          description: 'Implementei o framework Diffusion Map para reduzir a dimensionalidade do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
-          tecnologies: [
-            "R"
-          ]
-        },
-        {
-          company: 'Itaú Unibanco',
-          position: 'Estagiário em Desenvolvimento Web',
-          from: new Date(2015, 4),
-          to: new Date(2016, 10),
-          description: '',
-          tecnologies: [
-            "C#",
-            "SQL (SQL Server)",
-            "CSS",
-            "Javascript (jQuery, Knockout)"
-          ]
-        }
-      ]
+  export default {
+    data () {
+      return {
+        experiences: [
+          {
+            company: 'Banco Modal',
+            position: 'Estagiário em Desenvolvimento Web',
+            from: moment(new Date(2017, 5)).format("MMMM/YYYY"),
+            to: "today",
+            description: '',
+            tecnologies: [
+              "C# (Entity, WCF, Web API)",
+              "SQL (SQL Server)",
+              "PHP (Wordpress)",
+              "HTML (Pug)",
+              "CSS (Bootstrap)",
+              "Javascript (AngularJS, VueJS, Webpack, Gulp)"
+            ]
+          },
+          {
+            company: 'CEFET/RJ',
+            position: 'Bolsista de Iniciação Científica',
+            from: moment(new Date(2017, 3)).format("MMMM/YYYY"),
+            to: moment(new Date(2017, 7)).format("MMMM/YYYY"),
+            description: 'Implementei o framework Diffusion Map para reduzir a dimensionalidade do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
+            tecnologies: [
+              "R"
+            ]
+          },
+          {
+            company: 'Itaú Unibanco',
+            position: 'Estagiário em Desenvolvimento Web',
+            from: moment(new Date(2015, 4)).format("MMMM/YYYY"),
+            to: moment(new Date(2016, 10)).format("MMMM/YYYY"),
+            description: '',
+            tecnologies: [
+              "C#",
+              "SQL (SQL Server)",
+              "CSS",
+              "Javascript (jQuery, Knockout)"
+            ]
+          }
+        ]
+      }
     }
   }
-}
 </script>

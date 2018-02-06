@@ -24,14 +24,14 @@ export default {
   data () {
     return {
       backEnd: [
-        'C# (Entity, WCF, WebAPI)',
-        'Node.js (npm)',
+        'C# (Entity, WCF, Web API)',
+        'Node.js (Express)',
         'Python (Django)',
         'PHP (Wordpress)',
         'R'
       ],
       frontEnd: [
-        'Javascript (AngularJS, Gulp)',
+        'Javascript (AngularJS, VueJS, Webpack, Gulp)',
         'HTML (Pug)',
         'CSS (Bootstrap, Sass, Stylus)'
       ],
