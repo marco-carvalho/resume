@@ -1,23 +1,35 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+<template lang="pug">
+  #app.mx-auto.col-7
+    resume-header
+    resume-resume
+    resume-experiences
+    .row
+      .col-6
+        resume-education
+      .col-6
+        resume-languages
+    resume-skills
+    resume-footer
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
-</script>
+  import Education from "./components/Education"
+  import Experiences from "./components/Experiences"
+  import Footer from "./components/Footer"
+  import Header from "./components/Header"
+  import Languages from "./components/Languages"
+  import Resume from "./components/Resume"
+  import Skills from "./components/Skills"
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  export default {
+    components: {
+      'resume-education': Education,
+      'resume-experiences': Experiences,
+      'resume-footer': Footer,
+      'resume-header': Header,
+      'resume-languages': Languages,
+      'resume-resume': Resume,
+      'resume-skills': Skills
+    }
+  }
+</script>
