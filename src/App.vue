@@ -13,13 +13,13 @@
 </template>
 
 <script>
-  import Education from "./components/Education"
-  import Experiences from "./components/Experiences"
-  import Footer from "./components/Footer"
-  import Header from "./components/Header"
-  import Languages from "./components/Languages"
-  import Resume from "./components/Resume"
-  import Skills from "./components/Skills"
+  import Education from "./views/Education"
+  import Experiences from "./views/Experiences"
+  import Footer from "./views/Footer"
+  import Header from "./views/Header"
+  import Languages from "./views/Languages"
+  import Resume from "./views/Resume"
+  import Skills from "./views/Skills"
 
   export default {
     components: {
