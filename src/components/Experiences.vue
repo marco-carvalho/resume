@@ -2,16 +2,19 @@
   div
     h2.text-center Histórico Profissional
     hr
-    div(v-for='experience in experiences')
+    div.mb-3(v-for='experience in experiences')
       strong {{experience.position}}
       span.mx-1 no
       strong.mr-1 {{experience.company}}
-      span ({{experience.from}}
+      span (
+      span {{experience.from}}
       span.mx-1 -
-      span {{experience.to}})
-      p {{experience.description}}
-      p
-        .list-inline-item(v-for='tecnology in experience.tecnologies') {{tecnology}}
+      span {{experience.to}}
+      span )
+      p.m-0 {{experience.description}}
+      .list-inline-item(v-for='tecnology in experience.tecnologies')
+        .list-inline-item.bg-dark.p-1.rounded.text-white.mt-1.mr-1 {{tecnology.name}}
+        .list-inline-item.bg-secondary.p-1.rounded.text-white.mt-1.mr-1.list-inline-item(v-for='subtecnology in tecnology.subtecnologies') {{subtecnology}}
 </template>
 
 <script>
@@ -26,14 +29,14 @@
             position: 'Estagiário em Desenvolvimento Web',
             from: moment(new Date(2017, 5)).format("MMMM/YYYY"),
             to: "today",
-            description: '',
+            description: 'No time de Desenvolvimento, fui responsável pelo desenvolvimento e manutenção de APIs.',
             tecnologies: [
-              "C# (Entity, WCF, Web API)",
-              "SQL (SQL Server)",
-              "PHP (Wordpress)",
-              "HTML (Pug)",
-              "CSS (Bootstrap)",
-              "Javascript (AngularJS, VueJS, Webpack, Gulp)"
+              {name:"C#", subtecnologies: ["Entity", "WCF", "Web API"]},
+              {name:"SQL", subtecnologies: ["SQL Server"]},
+              {name:"PHP", subtecnologies: ["Wordpress"]},
+              {name:"HTML", subtecnologies: ["Pug"]},
+              {name:"CSS", subtecnologies: ["Bootstrap"]},
+              {name:"Javascript", subtecnologies: ["AngularJS", "VueJS", "Webpack"]}
             ]
           },
           {
@@ -43,7 +46,7 @@
             to: moment(new Date(2017, 7)).format("MMMM/YYYY"),
             description: 'Implementei o framework Diffusion Map para reduzir a dimensionalidade do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
             tecnologies: [
-              "R"
+              {name: "R"}
             ]
           },
           {
@@ -51,12 +54,13 @@
             position: 'Estagiário em Desenvolvimento Web',
             from: moment(new Date(2015, 4)).format("MMMM/YYYY"),
             to: moment(new Date(2016, 10)).format("MMMM/YYYY"),
-            description: '',
+            description: 'No time de Propostas Comerciais, fui responsável pelo desenvolvimento e manutenção de projetos web dos diversos clientes da área de Previdência.',
             tecnologies: [
-              "C#",
-              "SQL (SQL Server)",
-              "CSS",
-              "Javascript (jQuery, Knockout)"
+              {name: "C#"},
+              {name: "SQL", subtecnologies: ["SQL Server"]},
+              {name: "CSS"},
+              {name: "Javascript", subtecnologies: ["jQuery", "Knockout"]},
+              {name: "Scrum"}
             ]
           }
         ]
