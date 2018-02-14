@@ -13,8 +13,9 @@
       span )
       p.m-0 {{experience.description}}
       .list-inline-item(v-for='tecnology in experience.tecnologies')
-        .list-inline-item.bg-dark.p-1.rounded.text-white.mt-1.mr-1 {{tecnology.name}}
-        .list-inline-item.bg-secondary.p-1.rounded.text-white.mt-1.mr-1.list-inline-item(v-for='subtecnology in tecnology.subtecnologies') {{subtecnology}}
+        .list-inline-item.bg-dark.p-1.rounded.text-white.mt-1 {{tecnology.name}}
+        .list-inline-item(v-for='subtecnology in tecnology.subtecnologies')
+          .list-inline-item.bg-secondary.p-1.rounded.text-white.mt-1 {{subtecnology}}
 </template>
 
 <script>

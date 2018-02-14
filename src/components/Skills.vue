@@ -6,8 +6,9 @@
       .mb-3(v-for='skill in skills')
         .font-weight-bold {{skill.name}}
         .list-inline-item(v-for='tecnology in skill.tecnologies')
-          .list-inline-item.bg-dark.p-1.rounded.text-white.mt-1.mr-1 {{tecnology.name}}
-          .list-inline-item.bg-secondary.p-1.rounded.text-white.mt-1.mr-1.list-inline-item(v-for='subtecnology in tecnology.subtecnologies') {{subtecnology}}
+          .list-inline-item.bg-dark.p-1.rounded.text-white.mt-1 {{tecnology.name}}
+          .list-inline-item(v-for='subtecnology in tecnology.subtecnologies')
+            .list-inline-item.bg-secondary.p-1.rounded.text-white.mt-1 {{subtecnology}}
 </template>
 
 <script>
