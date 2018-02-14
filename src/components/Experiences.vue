@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    h2.text-center Histórico Profissional
+    h2.text-center {{name}}
     hr
     div.mb-3(v-for='experience in experiences')
       strong {{experience.position}}
@@ -23,6 +23,7 @@
   export default {
     data () {
       return {
+        name: "Histórico Profissional",
         experiences: [
           {
             company: 'Banco Modal',

@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    h2.text-center Habilidades
+    h2.text-center {{name}}
     hr
     .text-center
       .mb-3(v-for='skill in skills')
@@ -14,6 +14,7 @@
 export default {
   data() {
     return {
+      name: "Habilidades",
       skills: [
         {
           name: "Back End",

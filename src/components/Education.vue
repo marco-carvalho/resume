@@ -1,6 +1,6 @@
 <template lang="pug">
   div.text-center
-    h2 Educação
+    h2 {{name}}
     hr
     div(v-for="education in educations")
       p.mb-0
@@ -21,6 +21,7 @@
   export default {
     data() {
       return {
+        name: "Educação",
         educations: [
           {
             degree: "Bacharelado",
