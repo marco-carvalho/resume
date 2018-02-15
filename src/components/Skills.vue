@@ -38,9 +38,10 @@ export default {
         {
           name: "Infra",
           tecnologies: [
-            { name: "SQL", subtecnologies: ["SQL Server", "MySQL", "PostgreSQL"]},
+            { name: "SQL", subtecnologies: ["SQL Server", "PostgreSQL", "MySQL"]},
             { name: "Linux"},
-            { name: "Git"}
+            { name: "Docker"},
+            { name: "Controle de Versão", subtecnologies: ["Git", "TFS"]},
           ]
         }
       ]
