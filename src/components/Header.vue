@@ -2,6 +2,7 @@
   .text-center
     h1.text-uppercase.m-0 {{name}}
     p.m-0
+      i.fa.fa-envelope.mr-1
       a(:href="'mailto:' + mail") {{mail}}
       span.mx-1 |
       span +{{phone.CCC}} {{phone.cityCode}} {{phone.number}}
