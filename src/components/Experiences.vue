@@ -55,7 +55,7 @@
             company: 'Itaú Unibanco',
             position: 'Estagiário em Desenvolvimento Web',
             from: moment(new Date(2015, 4)).format("MMMM/YYYY"),
-            to: moment(new Date(2016, 10)).format("MMMM/YYYY"),
+            to: moment(new Date(2017, 3)).format("MMMM/YYYY"),
             description: 'No time de Propostas Comerciais, fui responsável pelo desenvolvimento e manutenção de projetos web dos diversos clientes da área de Previdência.',
             tecnologies: [
               {name: "C#"},
