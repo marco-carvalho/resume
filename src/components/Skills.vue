@@ -30,7 +30,7 @@ export default {
         {
           name: "Front End",
           tecnologies: [
-            { name: "Javascript", subtecnologies: ["AngularJS", "VueJS", "Webpack"]},
+            { name: "Javascript", subtecnologies: ["AngularJS", "VueJS", "Webpack", 'Gulp']},
             { name: "HTML", subtecnologies: ["Pug"] },
             { name: "CSS", subtecnologies: ["Bootstrap", "Sass", "Stylus"] }
           ]
