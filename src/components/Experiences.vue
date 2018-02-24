@@ -33,7 +33,7 @@
             to: "today",
             description: 'No time de Desenvolvimento, fui responsável pelo desenvolvimento e manutenção de APIs.',
             tecnologies: [
-              {name:"C#", subtecnologies: ["Entity", "WCF", "Web API"]},
+              {name:"C#", subtecnologies: ["Entity Framework", "WCF", "Web API"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
               {name:"PHP", subtecnologies: ["Wordpress"]},
               {name:"HTML", subtecnologies: ["Pug"]},

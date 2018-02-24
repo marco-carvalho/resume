@@ -20,7 +20,7 @@ export default {
         {
           name: "Back End",
           tecnologies: [
-            { name: "C#", subtecnologies: ["Entity", "WCF", "Web API"] },
+            { name: "C#", subtecnologies: ["Entity Framework", "WCF", "Web API"] },
             { name: "Node.js", subtecnologies: ["Express"] },
             { name: "Python", subtecnologies: ["Django"] },
             { name: "PHP", subtecnologies: ["Wordpress"] },
