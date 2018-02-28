@@ -31,7 +31,7 @@
             position: 'Estagiário em Desenvolvimento Web',
             from: moment(new Date(2017, 5)).format("MMMM/YYYY"),
             to: "today",
-            description: 'No time de Desenvolvimento, fui responsável pelo desenvolvimento e manutenção de APIs.',
+            description: 'No time de Desenvolvimento, trabalhei diretamente no projeto de fusão do banco com a corretora, sendo responsável pelo desenvolvimento/manutenção de serviços/APIs e criação de novas funcionalidades para o sistema interno da empresa, corrigindo bugs e melhorando o desempenho.',
             tecnologies: [
               {name:"C#", subtecnologies: ["Entity Framework", "WCF", "Web API"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
@@ -46,7 +46,7 @@
             position: 'Bolsista de Iniciação Científica',
             from: moment(new Date(2017, 3)).format("MMMM/YYYY"),
             to: moment(new Date(2017, 7)).format("MMMM/YYYY"),
-            description: 'Implementei o framework Diffusion Map para reduzir a dimensionalidade do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
+            description: 'O projeto de pesquisa teve como objetivo implementar e utilizar o framework Diffusion Map para reduzir a dimensionalidade do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
             tecnologies: [
               {name: "R"}
             ]
@@ -56,7 +56,7 @@
             position: 'Estagiário em Desenvolvimento Web',
             from: moment(new Date(2015, 4)).format("MMMM/YYYY"),
             to: moment(new Date(2017, 3)).format("MMMM/YYYY"),
-            description: 'No time de Propostas Comerciais, fui responsável pelo desenvolvimento e manutenção de projetos web dos diversos clientes da área de Previdência.',
+            description: 'No time de Propostas Comerciais, fui responsável pelo desenvolvimento/manutenção de projetos web dos diversos clientes da área de Previdência, corrigindo bugs e melhorando o desempenho.',
             tecnologies: [
               {name: "C#"},
               {name: "SQL", subtecnologies: ["SQL Server"]},
