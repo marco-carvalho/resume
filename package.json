@@ -13,14 +13,14 @@
     "jquery": "^3.3.1",
     "moment": "^2.21.0",
     "popper.js": "^1.12.9",
-    "vue": "^2.5.14",
+    "vue": "^2.5.15",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.6",
     "@vue/cli-service": "^3.0.0-beta.6",
     "pug": "^2.0.1",
-    "vue-template-compiler": "^2.5.14"
+    "vue-template-compiler": "^2.5.15"
   },
   "babel": {
     "presets": [
