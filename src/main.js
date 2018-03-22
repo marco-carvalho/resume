@@ -5,7 +5,9 @@ import App from './App'
 import router from './router'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '@fortawesome/fontawesome'
+import fontawesome from '@fortawesome/fontawesome'
+import solid from '@fortawesome/fontawesome-free-solid/'
+import brands from '@fortawesome/fontawesome-free-brands/'
 
 Vue.config.productionTip = false
 

@@ -7,10 +7,10 @@
       span.mx-1 |
       span +{{phone.CCC}} {{phone.cityCode}} {{phone.number}}
     p
-      i.fa.fa-github.mr-1
+      i.fab.fa-github.mr-1
       a(:href="'https://github.com/' + github") {{github}}
       span.mx-1 |
-      i.fa.fa-linkedin-square.mr-1
+      i.fab.fa-linkedin.mr-1
       a(:href="'https://linkedin.com/in/' + linkedin") {{linkedin}}
 </template>
 
