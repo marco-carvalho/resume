@@ -7,22 +7,22 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.4",
-    "@fortawesome/fontawesome-free-brands": "^5.0.8",
-    "@fortawesome/fontawesome-free-solid": "^5.0.8",
+    "@fortawesome/fontawesome": "^1.2.0-6",
+    "@fortawesome/fontawesome-free-brands": "^5.1.0-3",
+    "@fortawesome/fontawesome-free-solid": "^5.1.0-3",
     "axios": "^0.18.0",
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
     "moment": "^2.21.0",
     "popper.js": "^1.14.1",
-    "vue": "^2.5.16",
+    "vue": "^2.5.17-beta.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.6",
     "@vue/cli-service": "^3.0.0-beta.6",
     "pug": "^2.0.3",
-    "vue-template-compiler": "^2.5.16"
+    "vue-template-compiler": "^2.5.17-beta.0"
   },
   "babel": {
     "presets": [
