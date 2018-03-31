@@ -5,6 +5,7 @@
       i.fa.fa-envelope.mr-1
       a(:href="'mailto:' + mail") {{mail}}
       span.mx-1 |
+      i.fa.fa-phone.mr-1
       span +{{phone.CCC}} {{phone.cityCode}} {{phone.number}}
     p
       i.fab.fa-github.mr-1
