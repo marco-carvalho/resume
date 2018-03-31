@@ -1,7 +1,7 @@
 <template lang="pug">
   div.text-center
-    h2 {{name}}
-    hr
+    h2.font-weight-bold.text-uppercase.m-0 {{name}}
+    hr.mt-0
     div(v-for='language in languages')
       p.mb-0
         strong.mr-1 {{language.name}}:

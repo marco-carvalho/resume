@@ -1,6 +1,6 @@
 <template lang="pug">
   .text-center
-    h1.text-uppercase.m-0 {{name}}
+    h1.font-weight-bold.text-uppercase.m-0 {{name}}
     p.m-0
       i.fa.fa-envelope.mr-1
       a(:href="'mailto:' + mail") {{mail}}

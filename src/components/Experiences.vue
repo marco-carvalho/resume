@@ -1,7 +1,7 @@
 <template lang="pug">
   div
-    h2.text-center {{name}}
-    hr
+    h2.font-weight-bold.text-uppercase.text-center.m-0 {{name}}
+    hr.mt-0
     div.mb-3(v-for='experience in experiences')
       strong {{experience.position}}
       span.mx-1 no
@@ -33,7 +33,7 @@
             to: "today",
             description: 'No time de Desenvolvimento, trabalhei diretamente no projeto de fusão do banco com a corretora, sendo responsável pelo desenvolvimento/manutenção de serviços/APIs e pela criação de novas funcionalidades para o sistema interno da empresa, corrigindo bugs e melhorando o desempenho.',
             tecnologies: [
-              {name:"C#", subtecnologies: ["Entity Framework", "WCF", "Web API"]},
+              {name:"C#", subtecnologies: ["Web API", "Entity", "WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
               {name:"PHP", subtecnologies: ["Wordpress"]},
               {name:"HTML", subtecnologies: ["Pug"]},

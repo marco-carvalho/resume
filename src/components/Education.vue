@@ -1,7 +1,7 @@
 <template lang="pug">
   div.text-center
-    h2 {{name}}
-    hr
+    h2.font-weight-bold.text-uppercase.m-0 {{name}}
+    hr.mt-0
     div(v-for="education in educations")
       p.mb-0
         strong {{education.degree}}

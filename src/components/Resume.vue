@@ -1,7 +1,7 @@
 <template lang="pug">
   div
-    h2.text-center {{name}}
-    hr
+    h2.font-weight-bold.text-uppercase.text-center.m-0 {{name}}
+    hr.mt-0
     p {{resume}}
 </template>
 
