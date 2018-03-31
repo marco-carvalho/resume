@@ -19,30 +19,39 @@ export default {
       name: "Habilidades",
       skills: [
         {
+          name: "Front End",
+          tecnologies: [
+            { name: "Javascript", subtecnologies: ["AngularJS", "VueJS"]},
+            { name: "HTML", subtecnologies: ["Pug"] },
+            { name: "CSS", subtecnologies: ["Bootstrap", "Sass"] },
+            { name: "Builds", subtecnologies: ["Webpack"]},
+          ]
+        },
+        {
           name: "Back End",
           tecnologies: [
-            { name: "C#", subtecnologies: ["Entity Framework", "WCF", "Web API"] },
+            { name: "C#", subtecnologies: ["Web API", "Entity", "WCF"] },
             { name: "Node.js", subtecnologies: ["Express"] },
             { name: "Python", subtecnologies: ["Django"] },
             { name: "PHP", subtecnologies: ["Wordpress"] },
-            { name: "R"},
           ]
         },
         {
-          name: "Front End",
-          tecnologies: [
-            { name: "Javascript", subtecnologies: ["AngularJS", "VueJS", "Webpack", 'Gulp']},
-            { name: "HTML", subtecnologies: ["Pug"] },
-            { name: "CSS", subtecnologies: ["Bootstrap", "Sass", "Stylus"] }
-          ]
-        },
-        {
-          name: "Infra",
+          name: "DBA",
           tecnologies: [
             { name: "SQL", subtecnologies: ["SQL Server", "PostgreSQL", "MySQL"]},
-            { name: "Linux"},
+            { name: "NoSQL", subtecnologies: ["MongoDB"]},
+            { name: "Cache", subtecnologies: ["Redis"]},
+          ]
+        },
+        {
+          name: "DevOps",
+          tecnologies: [
+            { name: "AWS"},
+            { name: "CI/CD", subtecnologies: ["Travis", "CircleCI"]},
+            { name: "Linux", subtecnologies: ["Ubuntu", "CentOS"]},
             { name: "Docker"},
-            { name: "Controle de Versão", subtecnologies: ["Git", "TFS"]},
+            { name: "IIS"},
           ]
         }
       ]
