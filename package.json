@@ -20,10 +20,10 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-beta.6",
-    "@vue/cli-service": "^3.0.0-beta.6",
-    "eslint": "^4.19.1",
-    "husky": "^0.14.3",
+    "@vue/cli-plugin-babel": "^3.0.0-beta.7",
+    "@vue/cli-service": "^3.0.0-beta.7",
+    "eslint": "^5.0.0-alpha.1",
+    "husky": "^1.0.0-rc.2",
     "pug": "^2.0.3",
     "vue-template-compiler": "^2.5.17-beta.0"
   },
