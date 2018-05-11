@@ -28,17 +28,27 @@
         experiences: [
           {
             company: 'Banco Modal',
-            position: 'Estagiário em Desenvolvimento Web',
-            from: moment(new Date(2017, 5)).format("MMMM/YYYY"),
+            position: 'Estagiário de Desenvolvimento Web',
+            from: moment(new Date(2018, 4)).format("MMMM/YYYY"),
             to: "today",
-            description: 'No time de Desenvolvimento, trabalhei diretamente no projeto de fusão do banco com a corretora, sendo responsável pelo desenvolvimento/manutenção de serviços/APIs e pela criação de novas funcionalidades para o sistema interno da empresa, corrigindo bugs e melhorando o desempenho.',
+            description: 'No time de Comunicação, migrei os sites institucionais do banco para a utilização da JAMstack, o que acarretou em melhorias na performance e redução de custos, removendo a necessidade de bancos de dados e hospedagens pagas.',
+            tecnologies: [
+              {name:"Netlify CMS"},
+              {name:"CSS", subtecnologies: ["Bootstrap"]},
+              {name:"Javascript", subtecnologies: ["GatsbyJS", "React", "Webpack"]},
+            ]
+          },
+          {
+            company: 'Banco Modal',
+            position: 'Estagiário de Desenvolvimento Web',
+            from: moment(new Date(2017, 5)).format("MMMM/YYYY"),
+            to: moment(new Date(2018, 4)).format("MMMM/YYYY"),
+            description: 'No time de Desenvolvimento, trabalhei no projeto de fusão do banco com a corretora, sendo responsável pelo desenvolvimento/manutenção de serviços/APIs e pela criação de novas funcionalidades para o sistema interno da empresa, corrigindo bugs e melhorando o desempenho.',
             tecnologies: [
               {name:"C#", subtecnologies: ["Web API", "Entity", "WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
+              {name:"Javascript"},
               {name:"PHP", subtecnologies: ["Wordpress"]},
-              {name:"HTML", subtecnologies: ["Pug"]},
-              {name:"CSS", subtecnologies: ["Bootstrap"]},
-              {name:"Javascript", subtecnologies: ["AngularJS", "VueJS", "Webpack"]}
             ]
           },
           {
@@ -53,7 +63,7 @@
           },
           {
             company: 'Itaú Unibanco',
-            position: 'Estagiário em Desenvolvimento Web',
+            position: 'Estagiário de Desenvolvimento Web',
             from: moment(new Date(2015, 4)).format("MMMM/YYYY"),
             to: moment(new Date(2016, 10)).format("MMMM/YYYY"),
             description: 'No time de Propostas Comerciais, fui responsável pelo desenvolvimento/manutenção de projetos web dos diversos clientes da área de Previdência, corrigindo bugs e melhorando o desempenho.',
