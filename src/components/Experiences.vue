@@ -35,11 +35,11 @@
             tecnologies: [
               {name:"C#", subtecnologies: ["Web API", "Entity", "WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
-              {name:"Netlify", subtecnologies: ["Netlify CMS"]},
               {name:"HTML"},
               {name:"CSS", subtecnologies: ["Bootstrap"]},
               {name:"Javascript", subtecnologies: ["GatsbyJS", "React", "Webpack"]},
               {name:"PHP", subtecnologies: ["Wordpress"]},
+              {name:"Netlify", subtecnologies: ["Netlify CMS"]},
             ]
           },
           {
