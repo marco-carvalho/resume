@@ -61,6 +61,7 @@
             tecnologies: [
               {name: "C#"},
               {name: "SQL", subtecnologies: ["SQL Server"]},
+              {name: "HTML"},
               {name: "CSS"},
               {name: "Javascript", subtecnologies: ["jQuery", "Knockout"]},
               {name: "Scrum"}
