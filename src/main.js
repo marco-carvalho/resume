@@ -12,6 +12,7 @@ import moment from 'moment';
 
 Vue.config.productionTip = false;
 Vue.prototype.moment = moment;
+Vue.prototype.moment.locale('pt-br');
 
 new Vue({
   router,
