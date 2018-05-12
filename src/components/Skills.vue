@@ -3,7 +3,7 @@
     h2.font-weight-bold.text-uppercase.text-center.m-0 {{name}}
     hr.mt-0
     .row.text-center
-      .col-lg-6.mb-3(v-for="skill in skills")
+      .col-md-6.mb-3(v-for="skill in skills")
         h5.font-weight-bold.text-uppercase.m-0 {{skill.name}}
         hr.mt-0
         .list-inline-item(v-for="tecnology in skill.tecnologies")
