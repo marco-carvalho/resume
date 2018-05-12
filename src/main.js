@@ -8,8 +8,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome";
 import "@fortawesome/fontawesome-free-solid/";
 import "@fortawesome/fontawesome-free-brands/";
+import moment from 'moment';
 
 Vue.config.productionTip = false;
+Vue.prototype.moment = moment;
 
 new Vue({
   router,
