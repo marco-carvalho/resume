@@ -51,7 +51,7 @@ export default {
             { name: "CI/CD", subtecnologies: ["Travis", "CircleCI"]},
             { name: "Linux", subtecnologies: ["Ubuntu"]},
             { name: "Docker"},
-            { name: "IIS"},
+            { name: "Web Server", subtecnologies: ["IIS"]},
           ]
         }
       ]
