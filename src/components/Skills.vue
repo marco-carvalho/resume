@@ -49,7 +49,7 @@ export default {
           tecnologies: [
             { name: "AWS"},
             { name: "CI/CD", subtecnologies: ["Travis", "CircleCI"]},
-            { name: "Linux", subtecnologies: ["Ubuntu", "CentOS"]},
+            { name: "Linux", subtecnologies: ["Ubuntu"]},
             { name: "Docker"},
             { name: "IIS"},
           ]
