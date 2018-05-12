@@ -6,11 +6,7 @@
       strong {{experience.position}}
       span.mx-1 no
       strong.mr-1 {{experience.company}}
-      span (
-      span {{experience.from}}
-      span.mx-1 -
-      span {{experience.to}}
-      span )
+      span ({{experience.from}} - {{experience.to}})
       p.m-0 {{experience.description}}
       .list-inline-item(v-for='tecnology in experience.tecnologies')
         .list-inline-item.bg-dark.p-1.rounded.text-white.mt-1 {{tecnology.name}}
