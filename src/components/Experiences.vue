@@ -19,8 +19,6 @@
 </template>
 
 <script>
-  import moment from 'moment';
-
   export default {
     data () {
       return {
@@ -29,8 +27,8 @@
           {
             company: 'Banco Modal',
             position: 'Estagiário de Desenvolvimento Web',
-            from: moment(new Date(2017, 5)).format("MMMM/YYYY"),
-            to: "today",
+            from: this.moment(new Date(2017, 5)).format("MMMM/YYYY"),
+            to: "atual",
             description: "Trabalhei no projeto de fusão do banco com a corretora, sendo responsável pelo desenvolvimento/manutenção de serviços/APIs e pela criação de novas funcionalidades para o sistema interno da empresa, e migrei os sites institucionais do banco para a utilização da JAMstack, o que acarretou em melhorias na performance e redução de custos, removendo a necessidade de bancos de dados e hospedagens pagas.",
             tecnologies: [
               {name:"C#", subtecnologies: ["Web API", "Entity", "WCF"]},
@@ -45,8 +43,8 @@
           {
             company: 'CEFET/RJ',
             position: 'Bolsista de Iniciação Científica',
-            from: moment(new Date(2017, 3)).format("MMMM/YYYY"),
-            to: moment(new Date(2017, 7)).format("MMMM/YYYY"),
+            from: this.moment(new Date(2017, 3)).format("MMMM/YYYY"),
+            to: this.moment(new Date(2017, 7)).format("MMMM/YYYY"),
             description: 'O projeto de pesquisa teve como objetivo implementar e utilizar o framework Diffusion Map para reduzir a dimensionalidade do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
             tecnologies: [
               {name: "R"}
@@ -55,8 +53,8 @@
           {
             company: 'Itaú Unibanco',
             position: 'Estagiário de Desenvolvimento Web',
-            from: moment(new Date(2015, 4)).format("MMMM/YYYY"),
-            to: moment(new Date(2016, 10)).format("MMMM/YYYY"),
+            from: this.moment(new Date(2015, 4)).format("MMMM/YYYY"),
+            to: this.moment(new Date(2016, 10)).format("MMMM/YYYY"),
             description: 'No time de Propostas Comerciais, fui responsável pelo desenvolvimento/manutenção de projetos web dos diversos clientes da área de Previdência, corrigindo bugs e melhorando o desempenho.',
             tecnologies: [
               {name: "C#"},
