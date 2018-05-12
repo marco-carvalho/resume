@@ -4,9 +4,9 @@
     Resume
     Experiences
     .row
-      .col-6
+      .col-lg-6.mb-3
         Education
-      .col-6
+      .col-lg-6.mb-3
         Languages
     Skills
     hr
