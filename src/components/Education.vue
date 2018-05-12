@@ -3,13 +3,13 @@
     h2.font-weight-bold.text-uppercase.m-0 {{name}}
     hr.mt-0
     div(v-for="education in educations")
-      p.mb-0
+      div
         strong {{education.degree}}
         strong.mx-1 -
         strong {{education.university}}
-      p.mb-0
+      div
         strong {{education.course}}
-      p.mb-3
+      div
         span {{education.from}}
         span.mx-1 -
         span {{education.to}}
