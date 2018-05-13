@@ -25,6 +25,7 @@
     "eslint": "^5.0.0-alpha.2",
     "husky": "^1.0.0-rc.2",
     "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
     "vue-template-compiler": "^2.5.17-beta.0"
   },
   "babel": {
