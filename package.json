@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "eslint src"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.2.0-6",
@@ -22,29 +22,12 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.11",
     "@vue/cli-service": "^3.0.0-beta.11",
-    "eslint": "^5.0.0-alpha.4",
-    "husky": "^1.0.0-rc.8",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.11",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "vue-template-compiler": "^2.5.17-beta.0"
   },
-  "babel": {
-    "presets": [
-      "@vue/app"
-    ]
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
   "browserslist": [
     "> 1%"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint"
-    }
-  }
+  ]
 }
