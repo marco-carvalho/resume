@@ -1,14 +1,17 @@
 <template lang="pug">
   #app.mx-auto.col-11
     Header
-    Resume
-    Experiences
     .row
-      .col-sm-6.mb-3
-        Education
-      .col-sm-6.mb-3
-        Languages
-    Skills
+      .col-6
+        Experiences
+      .col-6
+        Resume
+        .row
+          .col-sm-6.mb-3
+            Education
+          .col-sm-6.mb-3
+            Languages
+        Skills
     hr
     Footer
 </template>
