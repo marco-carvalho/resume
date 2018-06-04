@@ -6,7 +6,7 @@
     .mb-3(v-for='experience in experiences')
       h4.font-weight-bold.m-0 {{experience.position}}
       h5.m-0 {{experience.company}}
-      .text-secondary {{experience.from}} - {{experience.to}}
+      .text-secondary {{experience.from}} - {{experience.to || "atual"}}
       p.m-0 {{experience.description}}
       .list-inline-item(v-for='tecnology in experience.tecnologies')
         .list-inline-item.bg-dark.p-1.rounded.text-white.mb-1 {{tecnology.name}}
@@ -24,8 +24,8 @@
             company: 'Banco Modal',
             position: 'Estagiário de Desenvolvimento Web',
             from: this.moment(new Date(2017, 5)).format("MMMM/YYYY"),
-            to: "atual",
-            description: "Trabalhei no projeto de fusão do banco com a corretora, sendo responsável pelo desenvolvimento/manutenção de serviços/APIs e pela criação de novas funcionalidades para o sistema interno da empresa, e migrei os sites institucionais do banco para a utilização da JAMstack, o que acarretou em melhorias na performance e redução de custos, removendo a necessidade de bancos de dados e hospedagens pagas.",
+            to: null,
+            description: "Trabalhei diretamente no projeto de fusão do banco com a corretora, sendo responsável pelo desenvolvimento/manutenção de serviços/APIs e pela criação de novas funcionalidades para o sistema interno da empresa, além de ter iniciado os projetos de migração dos sites institucionais do banco para a utilização da JAMstack.",
             tecnologies: [
               {name:"C#", subtecnologies: ["Web API", "Entity", "WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
