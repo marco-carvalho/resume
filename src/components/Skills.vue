@@ -24,7 +24,6 @@ export default {
             { name: "Javascript", subtecnologies: ["VueJS", "AngularJS", "React"]},
             { name: "HTML", subtecnologies: ["Pug"] },
             { name: "CSS", subtecnologies: ["Bootstrap", "Sass"] },
-            { name: "Builds", subtecnologies: ["Webpack"]},
           ]
         },
         {
