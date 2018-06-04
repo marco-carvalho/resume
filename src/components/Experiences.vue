@@ -9,9 +9,9 @@
       .text-secondary {{experience.from}} - {{experience.to}}
       p.m-0 {{experience.description}}
       .list-inline-item(v-for='tecnology in experience.tecnologies')
-        .list-inline-item.bg-dark.p-1.rounded.text-white.mt-1 {{tecnology.name}}
+        .list-inline-item.bg-dark.p-1.rounded.text-white.mb-1 {{tecnology.name}}
         .list-inline-item(v-for='subtecnology in tecnology.subtecnologies')
-          .list-inline-item.bg-secondary.p-1.rounded.text-white.mt-1 {{subtecnology}}
+          .list-inline-item.bg-secondary.p-1.rounded.text-white.mb-1 {{subtecnology}}
 </template>
 
 <script>
@@ -31,9 +31,9 @@
               {name:"SQL", subtecnologies: ["SQL Server"]},
               {name:"HTML"},
               {name:"CSS", subtecnologies: ["Bootstrap"]},
-              {name:"Javascript", subtecnologies: ["GatsbyJS", "React", "Webpack"]},
-              {name:"PHP", subtecnologies: ["Wordpress"]},
+              {name:"Javascript", subtecnologies: ["GatsbyJS"]},
               {name:"Headless CMS", subtecnologies: ["Netlify CMS"]},
+              {name:"PHP", subtecnologies: ["Wordpress"]},
             ]
           },
           {
