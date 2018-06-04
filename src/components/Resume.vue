@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  .mb-3
     h2.font-weight-bold.text-uppercase.text-center.m-0 {{name}}
     hr.mt-0
     p {{resume}}
