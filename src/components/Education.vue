@@ -3,16 +3,9 @@
     h2.font-weight-bold.text-uppercase.m-0 {{name}}
     hr.mt-0
     div(v-for="education in educations")
-      div
-        strong {{education.degree}}
-        strong.mx-1 -
-        strong {{education.university}}
-      div
-        strong {{education.course}}
-      div
-        span {{education.from}}
-        span.mx-1 -
-        span {{education.to}}
+      .font-weight-bold {{education.degree}} - {{education.university}}
+      .font-weight-bold {{education.course}}
+      .d-block {{education.from}} - {{education.to}}
 </template>
 
 <script>
