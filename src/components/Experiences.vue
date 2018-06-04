@@ -1,5 +1,6 @@
 <template lang="pug">
   div
+    hr.m-0.mb-2
     h2.font-weight-bold.text-uppercase.text-center.m-0 {{name}}
     hr.mt-0
     .mb-3(v-for='experience in experiences')

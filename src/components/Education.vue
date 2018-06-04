@@ -1,5 +1,6 @@
 <template lang="pug">
   .text-center.mb-3
+    hr.m-0.mb-2
     h2.font-weight-bold.text-uppercase.m-0 {{name}}
     hr.mt-0
     div(v-for="education in educations")
