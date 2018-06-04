@@ -3,10 +3,9 @@
     h2.font-weight-bold.text-uppercase.text-center.m-0 {{name}}
     hr.mt-0
     .mb-3(v-for='experience in experiences')
-      .mb-1
-        h4.font-weight-bold.m-0 {{experience.position}}
-        h5.m-0 {{experience.company}}
-        .text-secondary {{experience.from}} - {{experience.to}}
+      h4.font-weight-bold.m-0 {{experience.position}}
+      h5.m-0 {{experience.company}}
+      .text-secondary {{experience.from}} - {{experience.to}}
       p.m-0 {{experience.description}}
       .list-inline-item(v-for='tecnology in experience.tecnologies')
         .list-inline-item.bg-dark.p-1.rounded.text-white.mt-1 {{tecnology.name}}
