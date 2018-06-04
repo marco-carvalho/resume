@@ -6,11 +6,8 @@
         Experiences
       .col-6
         Resume
-        .row
-          .col-sm-6.mb-3
-            Education
-          .col-sm-6.mb-3
-            Languages
+        Education
+        Languages
         Skills
     hr
     Footer
