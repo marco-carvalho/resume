@@ -1,8 +1,7 @@
 <template lang="pug">
   .mb-3
-    hr.m-0.mb-2
-    h2.font-weight-bold.text-uppercase.text-center.m-0 {{name}}
-    hr.mt-0
+    .bg-secondary.text-uppercase.text-center.text-white.rounded
+      h2.font-weight-bold.p-1 {{name}}
     p {{resume}}
 </template>
 

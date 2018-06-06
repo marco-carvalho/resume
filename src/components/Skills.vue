@@ -1,8 +1,7 @@
 <template lang="pug">
   div
-    hr.m-0.mb-2
-    h2.font-weight-bold.text-uppercase.text-center.m-0 {{name}}
-    hr.mt-0
+    .bg-secondary.text-uppercase.text-center.text-white.rounded
+      h2.font-weight-bold.p-1 {{name}}
     .text-center.mb-3(v-for="skill in skills")
       .list-inline-item(v-for="tecnology in skill.tecnologies")
         .list-inline-item.bg-dark.p-1.rounded.text-white.mt-1 {{tecnology.name}}

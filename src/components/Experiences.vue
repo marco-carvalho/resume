@@ -1,8 +1,7 @@
 <template lang="pug">
   div
-    hr.m-0.mb-2
-    h2.font-weight-bold.text-uppercase.text-center.m-0 {{name}}
-    hr.mt-0
+    .bg-secondary.text-uppercase.text-center.text-white.rounded
+      h2.font-weight-bold.p-1 {{name}}
     .mb-3(v-for='experience in experiences')
       h4.font-weight-bold.m-0 {{experience.position}}
       h5.m-0 {{experience.company}}

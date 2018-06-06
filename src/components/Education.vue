@@ -1,8 +1,7 @@
 <template lang="pug">
   .text-center.mb-3
-    hr.m-0.mb-2
-    h2.font-weight-bold.text-uppercase.m-0 {{name}}
-    hr.mt-0
+    .bg-secondary.text-uppercase.text-center.text-white.rounded
+      h2.font-weight-bold.p-1 {{name}}
     div(v-for="education in educations")
       .font-weight-bold {{education.degree}} - {{education.university}}
       .font-weight-bold {{education.course}}
