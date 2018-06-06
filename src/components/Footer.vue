@@ -9,5 +9,5 @@
       a(href='https://getbootstrap.com/') Bootstrap
       span .
     .text-center
-      a(href="/") http://marco-carvalho.github.io/resume
+      a(href="https://marco-carvalho.github.io/resume") https://marco-carvalho.github.io/resume
 </template>
