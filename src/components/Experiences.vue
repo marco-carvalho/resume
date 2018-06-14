@@ -5,12 +5,16 @@
     .mb-3(v-for='experience in experiences')
       h4.font-weight-bold.m-0 {{experience.position}}
       h5.m-0 {{experience.company}}
-      .text-secondary {{experience.from}} - {{experience.to || "atual"}}
-      p.m-0 {{experience.description}}
+      .list-inline.text-secondary
+        .list-inline-item {{experience.from.format("MMMM/YYYY")}}
+        .list-inline-item -
+        .list-inline-item {{experience.to ? experience.to.format("MMMM/YYYY") : 'atualmente'}}
+        .list-inline-item •
+        .list-inline-item {{dateDiff(experience.from, experience.to).asMonths().toFixed(0)}} meses
+      .mb-1 {{experience.description}}
       .list-inline-item(v-for='tecnology in experience.tecnologies')
         .list-inline-item.bg-dark.p-1.rounded.text-white.mb-1 {{tecnology.name}}
-        .list-inline-item(v-for='subtecnology in tecnology.subtecnologies')
-          .list-inline-item.bg-secondary.p-1.rounded.text-white.mb-1 {{subtecnology}}
+        .list-inline-item.bg-secondary.p-1.rounded.text-white.mb-1(v-for='subtecnology in tecnology.subtecnologies') {{subtecnology}}
 </template>
 
 <script>

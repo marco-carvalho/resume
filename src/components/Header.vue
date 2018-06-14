@@ -1,18 +1,20 @@
 <template lang="pug">
-  .text-center
+  .text-center.mb-3
     h1.font-weight-bold.text-uppercase.m-0 {{name}}
-    p.m-0
-      i.fa.fa-envelope.mr-1
-      a(:href="'mailto:' + mail") {{mail}}
-      span.mx-1 |
-      i.fa.fa-phone.mr-1
-      span +{{phone.CCC}} {{phone.cityCode}} {{phone.number}}
-    p
-      i.fab.fa-github.mr-1
-      a(:href="'https://github.com/' + github") {{github}}
-      span.mx-1 |
-      i.fab.fa-linkedin.mr-1
-      a(:href="'https://linkedin.com/in/' + linkedin") {{linkedin}}
+    .list-inline
+      .list-inline-item
+        i.fa.fa-envelope.mr-1
+        a(:href="'mailto:' + mail") {{mail}}
+      .list-inline-item
+        i.fa.fa-phone.mr-1
+        span +{{phone.CCC}} {{phone.cityCode}} {{phone.number}}
+    .list-inline
+      .list-inline-item
+        i.fab.fa-github.mr-1
+        a(:href="'https://github.com/' + github") {{github}}
+      .list-inline-item
+        i.fab.fa-linkedin.mr-1
+        a(:href="'https://linkedin.com/in/' + linkedin") {{linkedin}}
 </template>
 
 <script>

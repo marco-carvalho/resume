@@ -1,15 +1,15 @@
 <template lang="pug">
-  #app.mx-auto.col-11
+  #app.container-fluid
     Header
     .row
-      .col-6
+      .col-md-6
         Experiences
-      .col-6
+      .col-md-6
         Resume
         .row
-          .col-6
+          .col-md-6
             Education
-          .col-6
+          .col-md-6
             Languages
         Skills
     hr
