@@ -11,8 +11,8 @@ import "@fortawesome/fontawesome-free-brands/";
 import moment from 'moment';
 
 Vue.config.productionTip = false;
-Vue.prototype.moment = moment;
-Vue.prototype.moment.locale('pt-br');
+Vue.prototype.$moment = moment;
+Vue.prototype.$moment.locale('pt-br');
 
 new Vue({
   router,

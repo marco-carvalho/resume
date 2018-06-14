@@ -22,7 +22,7 @@
           {
             company: 'Banco Modal',
             position: 'Estagiário de Desenvolvimento Web',
-            from: this.moment(new Date(2017, 5)).format("MMMM/YYYY"),
+            from: this.$moment("20170501"),
             to: null,
             description: "Trabalhei diretamente no projeto de fusão do banco com a corretora, sendo responsável pelo desenvolvimento/manutenção de serviços/APIs e pela criação de novas funcionalidades para o sistema interno da empresa, além de ter iniciado os projetos de migração dos sites institucionais do banco para a utilização da JAMstack.",
             tecnologies: [
@@ -38,8 +38,8 @@
           {
             company: 'CEFET/RJ',
             position: 'Bolsista de Iniciação Científica',
-            from: this.moment(new Date(2017, 3)).format("MMMM/YYYY"),
-            to: this.moment(new Date(2017, 7)).format("MMMM/YYYY"),
+            from: this.$moment("20170101"),
+            to: this.$moment("20170701"),
             description: 'O projeto de pesquisa teve como objetivo implementar e utilizar o framework Diffusion Map para reduzir a dimensionalidade do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
             tecnologies: [
               {name: "R"}
@@ -48,8 +48,8 @@
           {
             company: 'Itaú Unibanco',
             position: 'Estagiário de Desenvolvimento Web',
-            from: this.moment(new Date(2015, 4)).format("MMMM/YYYY"),
-            to: this.moment(new Date(2016, 10)).format("MMMM/YYYY"),
+            from: this.$moment("20150401"),
+            to: this.$moment("20161201"),
             description: 'No time de Propostas Comerciais, fui responsável pelo desenvolvimento/manutenção de projetos web dos diversos clientes da área de Previdência, corrigindo bugs e melhorando o desempenho.',
             tecnologies: [
               {name: "C#"},
@@ -61,6 +61,11 @@
             ]
           }
         ]
+      }
+    },
+    methods: {
+      dateDiff(date1, date2) {
+        return this.$moment.duration(this.$moment((date2 || new Date())).diff(this.$moment(date1)));
       }
     }
   }
