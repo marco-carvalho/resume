@@ -10,7 +10,7 @@
         .list-inline-item -
         .list-inline-item {{experience.to ? experience.to.format("MMMM/YYYY") : 'atualmente'}}
         .list-inline-item •
-        .list-inline-item {{dateDiff(experience.from, experience.to).asMonths().toFixed(0)}} meses
+        .list-inline-item {{dateDiff(experience.from, experience.to)}} mes(es)
       .mb-1 {{experience.description}}
       .list-inline-item.mb-1(v-for='tecnology in experience.tecnologies')
         .list-inline-item.bg-dark.p-1.rounded.text-white {{tecnology.name}}
@@ -69,7 +69,9 @@
     },
     methods: {
       dateDiff(date1, date2) {
-        return this.$moment.duration(this.$moment((date2 || new Date())).diff(this.$moment(date1)));
+        let from = this.$moment(date1);
+        let to = this.$moment(date2 || new Date());
+        return Number(this.$moment.duration(to.diff(from)).asMonths().toFixed(0)) + 1;
       }
     }
   }
