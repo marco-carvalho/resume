@@ -43,7 +43,7 @@
             company: 'CEFET/RJ',
             position: 'Bolsista de Iniciação Científica',
             from: this.$moment("20170101"),
-            to: this.$moment("20170701"),
+            to: this.$moment("20170601"),
             description: 'O projeto de pesquisa teve como objetivo implementar e utilizar o framework Diffusion Map para reduzir a dimensionalidade do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
             tecnologies: [
               {name: "R"}
