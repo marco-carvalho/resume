@@ -34,7 +34,7 @@
               {name:"SQL", subtecnologies: ["SQL Server"]},
               {name:"HTML"},
               {name:"CSS", subtecnologies: ["Bootstrap"]},
-              {name:"Javascript", subtecnologies: ["GatsbyJS"]},
+              {name:"Javascript", subtecnologies: ["React"]},
               {name:"Headless CMS", subtecnologies: ["Netlify CMS"]},
               {name:"PHP", subtecnologies: ["Wordpress"]},
             ]
