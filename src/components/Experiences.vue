@@ -12,9 +12,9 @@
         .list-inline-item •
         .list-inline-item {{dateDiff(experience.from, experience.to).asMonths().toFixed(0)}} meses
       .mb-1 {{experience.description}}
-      .list-inline-item(v-for='tecnology in experience.tecnologies')
-        .list-inline-item.bg-dark.p-1.rounded.text-white.mb-1 {{tecnology.name}}
-        .list-inline-item.bg-secondary.p-1.rounded.text-white.mb-1(v-for='subtecnology in tecnology.subtecnologies') {{subtecnology}}
+      .list-inline-item.mb-1(v-for='tecnology in experience.tecnologies')
+        .list-inline-item.bg-dark.p-1.rounded.text-white {{tecnology.name}}
+        .list-inline-item.bg-secondary.p-1.rounded.text-white(v-for='subtecnology in tecnology.subtecnologies') {{subtecnology}}
 </template>
 
 <script>
