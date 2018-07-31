@@ -52,7 +52,7 @@
           {
             company: 'Itaú Unibanco',
             position: 'Estagiário de Desenvolvimento Web',
-            from: this.$moment("20150401"),
+            from: this.$moment("20150501"),
             to: this.$moment("20161201"),
             description: 'No time de Propostas Comerciais, fui responsável pelo desenvolvimento/manutenção de projetos web dos diversos clientes da área de Previdência, corrigindo bugs e melhorando o desempenho.',
             tecnologies: [
