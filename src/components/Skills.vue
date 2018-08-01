@@ -48,6 +48,7 @@ export default {
             { name: "CI/CD", subtecnologies: ["Travis"]},
             { name: "Linux", subtecnologies: ["Ubuntu"]},
             { name: "Docker"},
+            { name: "Web Servers", subtecnologies: ["IIS", "Nginx"]},
           ]
         }
       ]
