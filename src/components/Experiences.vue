@@ -24,6 +24,14 @@
         name: "Histórico Profissional",
         experiences: [
           {
+            company: 'Stone Pagamentos',
+            position: 'Analista de Desenvolvimento Web',
+            from: this.$moment('20180801'),
+            to: null,
+            description: '',
+            tecnologies: []
+          },
+          {
             company: 'Banco Modal',
             position: 'Estagiário de Desenvolvimento Web',
             from: this.$moment("20170601"),
