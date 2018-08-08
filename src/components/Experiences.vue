@@ -27,6 +27,7 @@
             company: 'Banco Modal',
             position: 'Estagiário de Desenvolvimento Web',
             from: this.$moment("20170601"),
+            to: this.$moment('20180701'),
             description: "Trabalhei diretamente no projeto de fusão do banco com a corretora, sendo responsável pelo desenvolvimento/manutenção de serviços/APIs e pela criação de novas funcionalidades para o sistema interno da empresa, além de ter iniciado os projetos de migração dos sites institucionais do banco para a utilização da JAMstack.",
             tecnologies: [
               {name:"C#", subtecnologies: ["Web API", "Entity", "WCF"]},
