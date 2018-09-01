@@ -29,8 +29,6 @@ export default {
             { name: "C#", subtecnologies: ["Web API", "Entity", "WCF"] },
             { name: "Node.js", subtecnologies: ["Express"] },
             { name: "Python", subtecnologies: ["Django"] },
-            { name: "Java" },
-            { name: "Go" },
           ]
         },
         {
