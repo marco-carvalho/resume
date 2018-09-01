@@ -29,7 +29,10 @@
             from: this.$moment('20180801'),
             to: null,
             description: '',
-            tecnologies: []
+            tecnologies: [
+              {name:"C#", subtecnologies: ["WCF"]},
+              {name:"SQL", subtecnologies: ["SQL Server"]},
+            ]
           },
           {
             company: 'Banco Modal',
