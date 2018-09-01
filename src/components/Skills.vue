@@ -47,7 +47,7 @@ export default {
             { name: "AWS", subtecnologies: ["EC2"]},
             { name: "CI/CD", subtecnologies: ["Travis"]},
             { name: "Linux", subtecnologies: ["Ubuntu"]},
-            { name: "Docker"},
+            { name: "Docker", subtecnologies: ["Compose"]},
             { name: "Web Servers", subtecnologies: ["IIS", "Nginx"]},
           ]
         }
