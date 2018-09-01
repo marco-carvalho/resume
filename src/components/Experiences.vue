@@ -82,7 +82,7 @@
       dateDiff(date1, date2) {
         let from = this.$moment(date1);
         let to = this.$moment(date2 || new Date());
-        return Number(this.$moment.duration(to.diff(from)).asMonths().toFixed(0)) + 1;
+        return Math.ceil(this.$moment.duration(to.diff(from)).asMonths());
       }
     }
   }
