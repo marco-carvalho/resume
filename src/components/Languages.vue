@@ -19,7 +19,7 @@ export default {
         },
         {
           name: 'Inglês',
-          level: 'avançado'
+          level: 'fluente'
         },
         {
           name: 'Espanhol',
