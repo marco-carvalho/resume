@@ -1,6 +1,3 @@
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/marco-carvalho/resume.svg)](https://greenkeeper.io/)
-
 [travis-image]: https://travis-ci.org/marco-carvalho/resume.svg
 [travis-url]: https://travis-ci.org/marco-carvalho/resume
 [david-dm-image]: https://david-dm.org/marco-carvalho/resume/status.svg
