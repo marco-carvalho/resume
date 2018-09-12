@@ -26,8 +26,5 @@
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "vue-template-compiler": "^2.5.17"
-  },
-  "browserslist": [
-    "> 1%"
-  ]
+  }
 }
