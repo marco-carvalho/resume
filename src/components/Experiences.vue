@@ -32,6 +32,7 @@
             tecnologies: [
               {name:"C#", subtecnologies: ["WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
+              {name: "CI/CD", subtecnologies: ["GoCD"]},
               {name:"Logs", subtecnologies: ["Splunk"]},
             ]
           },

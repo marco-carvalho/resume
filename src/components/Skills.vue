@@ -43,7 +43,7 @@ export default {
           name: "DevOps",
           tecnologies: [
             { name: "AWS", subtecnologies: ["EC2"]},
-            { name: "CI/CD", subtecnologies: ["Travis"]},
+            { name: "CI/CD", subtecnologies: ["Travis", "GoCD"]},
             { name: "Linux", subtecnologies: ["Ubuntu"]},
             { name: "Docker", subtecnologies: ["Compose"]},
             { name: "Web Servers", subtecnologies: ["IIS", "Nginx"]},
