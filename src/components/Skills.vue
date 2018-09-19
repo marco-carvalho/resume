@@ -47,6 +47,7 @@ export default {
             { name: "Linux", subtecnologies: ["Ubuntu"]},
             { name: "Docker", subtecnologies: ["Compose"]},
             { name: "Web Servers", subtecnologies: ["IIS", "Nginx"]},
+            { name: "Logs", subtecnologies: ["Splunk"]},
           ]
         }
       ]
