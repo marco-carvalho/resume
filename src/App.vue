@@ -1,5 +1,5 @@
 <template lang="pug">
-  #app.container-fluid
+  #app.container
     Header
     .row
       .col-md-6
