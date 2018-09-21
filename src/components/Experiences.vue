@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    .bg-secondary.text-uppercase.text-center.text-white.rounded
+    .bg-dark.text-uppercase.text-center.text-white.rounded
       h2.font-weight-bold.p-1 {{name}}
     .mb-3(v-for='experience in experiences')
       h4.font-weight-bold.m-0 {{experience.position}}

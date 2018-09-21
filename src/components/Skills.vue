@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    .bg-secondary.text-uppercase.text-center.text-white.rounded
+    .bg-dark.text-uppercase.text-center.text-white.rounded
       h2.font-weight-bold.p-1 {{name}}
     .text-center.mb-3(v-for="skill in skills")
       .list-inline-item(v-for="tecnology in skill.tecnologies")

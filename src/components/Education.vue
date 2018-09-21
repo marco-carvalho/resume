@@ -1,6 +1,6 @@
 <template lang="pug">
   .text-center.mb-3
-    .bg-secondary.text-uppercase.text-center.text-white.rounded
+    .bg-dark.text-uppercase.text-center.text-white.rounded
       h2.font-weight-bold.p-1 {{name}}
     div(v-for="education in educations")
       .font-weight-bold {{education.degree}} - {{education.university}}
