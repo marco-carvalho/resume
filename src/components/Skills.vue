@@ -42,12 +42,12 @@ export default {
         {
           name: "DevOps",
           tecnologies: [
-            { name: "AWS", subtecnologies: ["EC2"]},
-            { name: "CI/CD", subtecnologies: ["Travis", "GoCD"]},
             { name: "Linux", subtecnologies: ["Ubuntu"]},
-            { name: "Docker", subtecnologies: ["Compose"]},
             { name: "Web Servers", subtecnologies: ["IIS", "Nginx"]},
+            { name: "Infra as Code", subtecnologies: ["Docker"]},
+            { name: "CI/CD", subtecnologies: ["Travis", "GoCD"]},
             { name: "Logs", subtecnologies: ["Splunk"]},
+            { name: "Cloud", subtecnologies: ["AWS"]},
           ]
         }
       ]
