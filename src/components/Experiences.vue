@@ -82,9 +82,12 @@
     },
     methods: {
       dateDiff(date1, date2) {
-        let from = this.$moment(date1);
-        let to = this.$moment(date2 || new Date());
-        return Math.ceil(this.$moment.duration(to.diff(from)).asMonths());
+        const from = this.$moment(date1);
+        const to = this.$moment(date2 || new Date());
+        const diff = to.diff(from);
+        const duration = this.$moment.duration(diff);
+        const durationAsMonths = duration.asMonths();
+        return Math.ceil(durationAsMonths);
       }
     }
   }
