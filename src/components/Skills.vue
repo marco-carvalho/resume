@@ -2,11 +2,15 @@
   div
     .bg-dark.text-uppercase.text-center.text-white.rounded
       h2.font-weight-bold.p-1 {{name}}
-    .text-center.mb-3(v-for="skill in skills")
-      .list-inline-item(v-for="tecnology in skill.tecnologies")
-        .list-inline-item.bg-dark.p-1.rounded.text-white.mt-1 {{tecnology.name}}
-        .list-inline-item(v-for="subtecnology in tecnology.subtecnologies")
-          .list-inline-item.bg-secondary.p-1.rounded.text-white.mt-1 {{subtecnology}}
+    .row.mb-2(v-for="skill in skills")
+      .col-auto
+        .bg-dark.text-uppercase.text-center.text-white.rounded.h-100
+          h2.font-weight-bold.p-1 {{skill.name}}
+      .col
+        .row(v-for="tecnology in skill.tecnologies")
+          .list-inline-item.bg-dark.p-1.rounded.text-white.mt-1 {{tecnology.name}}
+          .list-inline-item(v-for="subtecnology in tecnology.subtecnologies")
+            .list-inline-item.bg-secondary.p-1.rounded.text-white.mt-1 {{subtecnology}}
 </template>
 
 <script>
