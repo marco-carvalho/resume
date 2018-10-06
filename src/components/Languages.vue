@@ -13,18 +13,8 @@ export default {
     return {
       name: "Idiomas",
       languages: [
-        {
-          name: 'Português',
-          level: 'fluente'
-        },
-        {
-          name: 'Inglês',
-          level: 'fluente'
-        },
-        {
-          name: 'Espanhol',
-          level: 'básico'
-        },
+        { name: 'Português', level: 'fluente' },
+        { name: 'Inglês', level: 'fluente' },
       ]
     }
   }
