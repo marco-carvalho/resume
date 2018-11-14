@@ -5,9 +5,9 @@ import App from "./App";
 import router from "./router";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "@fortawesome/fontawesome";
-import "@fortawesome/fontawesome-free-solid/";
-import "@fortawesome/fontawesome-free-brands/";
+import "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/free-solid-svg-icons";
+import "@fortawesome/free-brands-svg-icons";
 import moment from 'moment';
 
 Vue.config.productionTip = false;
