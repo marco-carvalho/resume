@@ -28,7 +28,7 @@
             position: 'Analista de Desenvolvimento Web',
             from: this.$moment('20180801'),
             to: null,
-            description: '',
+            description: 'Na equipe de Risco, fui responsável pelo desenvolvimento/manutenção de interfaces/APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos ligados as áreas de Monitoramento, Credenciamento, Prevenção e Antifraude.',
             tecnologies: [
               {name:"C#", subtecnologies: ["WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
