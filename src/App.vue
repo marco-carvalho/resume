@@ -1,19 +1,19 @@
 <template lang="pug">
-  #app.container
-    Header
-    .row
-      .col-md-6
-        Experiences
-      .col-md-6
-        Resume
-        .row
-          .col-md-6
-            Education
-          .col-md-6
-            Languages
-        Skills
-    hr
-    Footer
+#app.container
+  Header
+  .row
+    .col-md-6
+      Experiences
+    .col-md-6
+      Resume
+      .row
+        .col-md-6
+          Education
+        .col-md-6
+          Languages
+      Skills
+  hr
+  Footer
 </template>
 
 <script>
