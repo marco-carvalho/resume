@@ -23,14 +23,14 @@ export default {
           name: "Front End",
           tecnologies: [
             { name: "HTML", subtecnologies: ["Pug"] },
-            { name: "CSS", subtecnologies: ["Bootstrap", "Sass", 'BEM'] },
+            { name: "CSS", subtecnologies: ["Bootstrap", "Sass"] },
             { name: "Javascript", subtecnologies: ["VueJS", "AngularJS", "React"]},
           ]
         },
         {
           name: "Back End",
           tecnologies: [
-            { name: "C#", subtecnologies: ["Web API", "Entity", "WCF"] },
+            { name: "C#", subtecnologies: ["Web API", "WCF"] },
             { name: "Node.js", subtecnologies: ["Express"] },
             { name: "Python", subtecnologies: ["Django"] },
           ]
