@@ -49,7 +49,7 @@ export default {
             { name: "Linux", subtecnologies: ["Ubuntu"]},
             { name: "Web Servers", subtecnologies: ["IIS", "Nginx"]},
             { name: "Infra as Code", subtecnologies: ["Docker"]},
-            { name: "CI/CD", subtecnologies: ["Travis", "GoCD"]},
+            { name: "CI/CD", subtecnologies: ["Travis CI", "GoCD", "Azure DevOps"]},
             { name: "Logs", subtecnologies: ["Splunk"]},
             { name: "Cloud", subtecnologies: ["AWS"]},
           ]

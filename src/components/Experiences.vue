@@ -41,7 +41,7 @@ div
             tecnologies: [
               {name:"C#", subtecnologies: ["WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
-              {name: "CI/CD", subtecnologies: ["GoCD"]},
+              {name: "CI/CD", subtecnologies: ["GoCD", "Azure DevOps"]},
               {name:"Logs", subtecnologies: ["Splunk"]},
             ]
           },
