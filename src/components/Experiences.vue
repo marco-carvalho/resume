@@ -28,8 +28,11 @@ div
             position: 'Analista de Desenvolvimento Web',
             from: this.$moment('20190101'),
             to: null,
-            description: '',
+            description: 'Na equipe de Asset Management, fui responsável pelo desenvolvimento/manutenção de interfaces/APIs que atendem as necessidade dos funcionários internos/externos ligados as áreas de Asset e Wealth.',
             tecnologies: [
+              {name:"C#", subtecnologies: ["WebAPI", "WCF"]},
+              {name:"SQL", subtecnologies: ["SQL Server"]},
+              {name:"CI/CD", subtecnologies: ["Azure DevOps"]},
             ]
           },
           {
