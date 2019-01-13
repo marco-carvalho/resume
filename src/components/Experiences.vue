@@ -28,9 +28,9 @@ div
             position: 'Analista de Desenvolvimento Web',
             from: this.$moment('20190101'),
             to: null,
-            description: 'Na equipe de Asset Management, fui responsável pelo desenvolvimento/manutenção de interfaces/APIs que atendem as necessidade dos funcionários internos/externos ligados as áreas de Asset e Wealth.',
+            description: 'Na equipe de Asset Management, fui responsável pelo desenvolvimento de interfaces e APIs que atendem as necessidade dos funcionários internos e clientes externos das áreas de Asset e Wealth.',
             tecnologies: [
-              {name:"C#", subtecnologies: ["WebAPI", "WCF"]},
+              {name:"C#", subtecnologies: ["Web API", "WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
               {name:"CI/CD", subtecnologies: ["Azure DevOps"]},
             ]
@@ -40,7 +40,7 @@ div
             position: 'Analista de Desenvolvimento Web',
             from: this.$moment('20180801'),
             to: this.$moment('20190101'),
-            description: 'Na equipe de Risco, fui responsável pelo desenvolvimento/manutenção de interfaces/APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos ligados as áreas de Monitoramento, Credenciamento, Prevenção e Antifraude.',
+            description: 'Na equipe de Risco, fui responsável pelo desenvolvimento de interfaces e APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos das áreas de Investigação, Credenciamento e Antifraude.',
             tecnologies: [
               {name:"C#", subtecnologies: ["WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
@@ -53,9 +53,9 @@ div
             position: 'Estagiário de Desenvolvimento Web',
             from: this.$moment("20170601"),
             to: this.$moment('20180701'),
-            description: "Trabalhei diretamente no projeto de fusão do banco com a corretora, sendo responsável pelo desenvolvimento/manutenção de serviços/APIs e pela criação de novas funcionalidades para o sistema interno da empresa, além de ter iniciado os projetos de migração dos sites institucionais do banco para a utilização da JAMstack.",
+            description: "Fui responsável pelo desenvolvimento de serviços e APIs no projeto do Banco Digital e do sistema interno da empresa, além de ter iniciado os projetos de migração dos sites institucionais para a utilização da JAMstack.",
             tecnologies: [
-              {name:"C#", subtecnologies: ["Web API", "Entity", "WCF"]},
+              {name:"C#", subtecnologies: ["Web API", "WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
               {name:"HTML"},
               {name:"CSS", subtecnologies: ["Bootstrap"]},
@@ -67,7 +67,7 @@ div
             position: 'Bolsista de Iniciação Científica',
             from: this.$moment("20170101"),
             to: this.$moment("20170601"),
-            description: 'O projeto de pesquisa teve como objetivo implementar e utilizar o framework Diffusion Map para reduzir a dimensionalidade do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
+            description: 'Implementei um framework de Machine Learning chamado Diffusion Map para reduzir a dimensionalidade e extrair funcionalidades de centenas de datasets formados por estrelas.',
             tecnologies: [
               {name: "R"}
             ]
@@ -77,7 +77,7 @@ div
             position: 'Estagiário de Desenvolvimento Web',
             from: this.$moment("20150501"),
             to: this.$moment("20161201"),
-            description: 'No time de Propostas Comerciais, fui responsável pelo desenvolvimento/manutenção de projetos web dos diversos clientes da área de Previdência, corrigindo bugs e melhorando o desempenho.',
+            description: 'No time de Propostas Comerciais, fui responsável pelo desenvolvimento de projetos web dos clientes da área de Previdência.',
             tecnologies: [
               {name: "C#"},
               {name: "SQL", subtecnologies: ["SQL Server"]},
