@@ -12,6 +12,7 @@
         .col-md-6
           Languages
       Skills
+      Certifications
   hr
   Footer
 </template>
@@ -24,6 +25,7 @@ import Header from "@/components/Header";
 import Languages from "@/components/Languages";
 import Resume from "@/components/Resume";
 import Skills from "@/components/Skills";
+import Certifications from "@/components/Certifications";
 
 export default {
   components: {
@@ -33,7 +35,8 @@ export default {
     Header,
     Languages,
     Resume,
-    Skills
+    Skills,
+    Certifications,
   }
 };
 </script>
