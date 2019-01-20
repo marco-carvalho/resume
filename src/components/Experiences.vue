@@ -43,6 +43,7 @@ div
             description: 'Na equipe de Risco, fui responsável pelo desenvolvimento de interfaces e APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos das áreas de Investigação, Credenciamento e Antifraude.',
             tecnologies: [
               {name:"C#", subtecnologies: ["WCF"]},
+              {name:"Python"},
               {name:"SQL", subtecnologies: ["SQL Server"]},
               {name: "CI/CD", subtecnologies: ["GoCD", "Azure DevOps"]},
               {name:"Logs", subtecnologies: ["Splunk"]},
