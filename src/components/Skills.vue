@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+.mb-3
   .bg-dark.text-uppercase.text-center.text-white.rounded
     h2.font-weight-bold.p-1 {{name}}
   .row.mb-2(v-for="skill in skills")
@@ -8,9 +8,10 @@ div
         h2.font-weight-bold.p-1 {{skill.name}}
     .col
       .row.mb-1(v-for="tecnology in skill.tecnologies")
-        .list-inline-item.bg-dark.p-1.rounded.text-white {{tecnology.name}}
+        .list-inline-item
+          .bg-dark.p-1.rounded.text-white {{tecnology.name}}
         .list-inline-item(v-for="subtecnology in tecnology.subtecnologies")
-          .list-inline-item.bg-secondary.p-1.rounded.text-white {{subtecnology}}
+          .bg-secondary.p-1.rounded.text-white {{subtecnology}}
 </template>
 
 <script>
