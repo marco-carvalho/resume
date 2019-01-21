@@ -28,7 +28,7 @@ div
             position: 'Analista de Desenvolvimento Web',
             from: this.$moment('20190101'),
             to: null,
-            description: 'Na equipe de Asset Management, fui responsável pelo desenvolvimento de interfaces e APIs que atendem as necessidade dos funcionários internos e clientes externos das áreas de Asset, Wealth e Investment Banking.',
+            description: 'Fui responsável pelo desenvolvimento de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos e clientes externos das áreas de Asset Management, Wealth Management e Investment Banking.',
             tecnologies: [
               {name:"C#", subtecnologies: ["Web API", "WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
@@ -40,7 +40,7 @@ div
             position: 'Analista de Desenvolvimento Web',
             from: this.$moment('20180801'),
             to: this.$moment('20190101'),
-            description: 'Na equipe de Risco, fui responsável pelo desenvolvimento de interfaces e APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos das áreas de Investigação, Credenciamento e Antifraude.',
+            description: 'Fui responsável pelo desenvolvimento de interfaces e APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos das áreas de Investigação, Credenciamento e Antifraude.',
             tecnologies: [
               {name:"C#", subtecnologies: ["WCF"]},
               {name:"Python"},
@@ -54,7 +54,7 @@ div
             position: 'Estagiário de Desenvolvimento Web',
             from: this.$moment("20170601"),
             to: this.$moment('20180701'),
-            description: "Fui responsável pelo desenvolvimento de serviços e APIs no projeto do Banco Digital e do sistema interno da empresa, além de ter iniciado os projetos de migração dos sites institucionais para a utilização da JAMstack.",
+            description: "Fui responsável pelo desenvolvimento de serviços e APIs no projeto do Banco Digital e no sistema interno da empresa, além de ter iniciado os projetos de migração dos sites institucionais para a utilização da JAMstack.",
             tecnologies: [
               {name:"C#", subtecnologies: ["Web API", "WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
@@ -78,7 +78,7 @@ div
             position: 'Estagiário de Desenvolvimento Web',
             from: this.$moment("20150501"),
             to: this.$moment("20161201"),
-            description: 'No time de Propostas Comerciais, fui responsável pelo desenvolvimento de projetos web dos clientes da área de Previdência.',
+            description: 'Fui responsável pelo desenvolvimento de interfaces e serviços web dos clientes da área de Previdência.',
             tecnologies: [
               {name: "C#"},
               {name: "SQL", subtecnologies: ["SQL Server"]},
