@@ -2,7 +2,7 @@
 .mb-3
   .bg-dark.text-uppercase.text-center.text-white.rounded
     h2.font-weight-bold.px-1 {{name}}
-  .row.mb-2(v-for="skill in skills")
+  .row.mb-1(v-for="skill in skills")
     .col-auto
       .bg-dark.text-uppercase.text-center.text-white.rounded
         h2.font-weight-bold.px-1 {{skill.name}}
