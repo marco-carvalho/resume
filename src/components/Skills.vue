@@ -1,17 +1,17 @@
 <template lang="pug">
 .mb-3
   .bg-dark.text-uppercase.text-center.text-white.rounded
-    h2.font-weight-bold.p-1 {{name}}
+    h2.font-weight-bold.px-1 {{name}}
   .row.mb-2(v-for="skill in skills")
     .col-auto
       .bg-dark.text-uppercase.text-center.text-white.rounded
-        h2.font-weight-bold.p-1 {{skill.name}}
+        h2.font-weight-bold.px-1 {{skill.name}}
     .col
       .row.mb-1(v-for="tecnology in skill.tecnologies")
         .list-inline-item
-          .bg-dark.p-1.rounded.text-white {{tecnology.name}}
+          .bg-dark.px-1.rounded.text-white {{tecnology.name}}
         .list-inline-item(v-for="subtecnology in tecnology.subtecnologies")
-          .bg-secondary.p-1.rounded.text-white {{subtecnology}}
+          .bg-secondary.px-1.rounded.text-white {{subtecnology}}
 </template>
 
 <script>

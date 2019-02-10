@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   .bg-dark.text-uppercase.text-center.text-white.rounded
-    h2.font-weight-bold.p-1 {{name}}
+    h2.font-weight-bold.px-1 {{name}}
   .mb-3(v-for='experience in experiences')
     h4.font-weight-bold.m-0 {{experience.position}}
     h5.m-0 {{experience.company}}
@@ -13,8 +13,8 @@ div
       .list-inline-item {{dateDiff(experience.from, experience.to)}} mes(es)
     .mb-1 {{experience.description}}
     .list-inline-item.mb-1(v-for='tecnology in experience.tecnologies')
-      .list-inline-item.bg-dark.p-1.rounded.text-white {{tecnology.name}}
-      .list-inline-item.bg-secondary.p-1.rounded.text-white(v-for='subtecnology in tecnology.subtecnologies') {{subtecnology}}
+      .list-inline-item.bg-dark.px-1.rounded.text-white {{tecnology.name}}
+      .list-inline-item.bg-secondary.px-1.rounded.text-white(v-for='subtecnology in tecnology.subtecnologies') {{subtecnology}}
 </template>
 
 <script>
