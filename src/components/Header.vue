@@ -8,7 +8,6 @@
     .list-inline-item
       i.fa.fa-phone.mr-1
       span +{{phone.CCC}} {{phone.cityCode}} {{phone.number}}
-  .list-inline
     .list-inline-item
       i.fab.fa-github.mr-1
       a(:href="'https://github.com/' + github") {{github}}
