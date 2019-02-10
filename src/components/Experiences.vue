@@ -30,6 +30,9 @@ div
             to: null,
             description: 'Fui responsável pelo desenvolvimento de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos e clientes externos das áreas de Asset Management, Wealth Management e Investment Banking.',
             tecnologies: [
+              {name:"HTML"},
+              {name:"CSS"},
+              {name: "Javascript", subtecnologies: ["jQuery"]},
               {name:"C#", subtecnologies: ["Web API", "WCF"]},
               {name:"SQL", subtecnologies: ["SQL Server"]},
               {name:"CI/CD", subtecnologies: ["Azure DevOps"]},
@@ -40,7 +43,7 @@ div
             position: 'Analista de Desenvolvimento Web',
             from: this.$moment('20180801'),
             to: this.$moment('20190101'),
-            description: 'Fui responsável pelo desenvolvimento de interfaces e APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos das áreas de Investigação, Credenciamento e Antifraude.',
+            description: 'Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos ligados as áreas de Monitoramento, Credenciamento, Prevenção e Antifraude.',
             tecnologies: [
               {name:"C#", subtecnologies: ["WCF"]},
               {name:"Python"},
@@ -54,13 +57,13 @@ div
             position: 'Estagiário de Desenvolvimento Web',
             from: this.$moment("20170601"),
             to: this.$moment('20180701'),
-            description: "Fui responsável pelo desenvolvimento de serviços e APIs no projeto do Banco Digital e no sistema interno da empresa, além de ter iniciado os projetos de migração dos sites institucionais para a utilização da JAMstack.",
+            description: "Fui responsável pelo desenvolvimento e manutenção de serviços e APIs do projeto do Banco Digital, pela criação de novas funcionalidades para o sistema interno da empresa, além de ter iniciado os projetos de migração dos sites institucionais do banco para a utilização da JAMstack.",
             tecnologies: [
-              {name:"C#", subtecnologies: ["Web API", "WCF"]},
-              {name:"SQL", subtecnologies: ["SQL Server"]},
               {name:"HTML"},
               {name:"CSS", subtecnologies: ["Bootstrap"]},
               {name:"Javascript", subtecnologies: ["React"]},
+              {name:"C#", subtecnologies: ["Web API", "WCF"]},
+              {name:"SQL", subtecnologies: ["SQL Server"]},
             ]
           },
           {
@@ -68,7 +71,7 @@ div
             position: 'Bolsista de Iniciação Científica',
             from: this.$moment("20170101"),
             to: this.$moment("20170601"),
-            description: 'Implementei um framework de Machine Learning chamado Diffusion Map para reduzir a dimensionalidade e extrair funcionalidades de centenas de datasets formados por estrelas.',
+            description: 'Fui responsável por implementar e utilizar o framework de Machine Learning chamado Diffusion Map para reduzir a dimensionalidade do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
             tecnologies: [
               {name: "R"}
             ]
@@ -78,14 +81,13 @@ div
             position: 'Estagiário de Desenvolvimento Web',
             from: this.$moment("20150501"),
             to: this.$moment("20161201"),
-            description: 'Fui responsável pelo desenvolvimento de interfaces e serviços web dos clientes da área de Previdência.',
+            description: 'Fui responsável pelo desenvolvimento e manutenção de projetos web dos clientes da área de Previdência, corrigindo bugs e melhorando o desempenho.',
             tecnologies: [
-              {name: "C#"},
-              {name: "SQL", subtecnologies: ["SQL Server"]},
               {name: "HTML"},
               {name: "CSS"},
               {name: "Javascript", subtecnologies: ["jQuery", "Knockout"]},
-              {name: "Scrum"}
+              {name: "C#"},
+              {name: "SQL", subtecnologies: ["SQL Server"]},
             ]
           }
         ]
