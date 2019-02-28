@@ -6,9 +6,9 @@ div
     h4.font-weight-bold.m-0 {{experience.position}}
     h5.m-0 {{experience.company}}
     .list-inline.text-secondary
-      .list-inline-item {{experience.from.format("MMMM/YYYY")}}
+      .list-inline-item {{experience.from.format("MMMM/YYYY").toLowerCase()}}
       .list-inline-item -
-      .list-inline-item {{experience.to ? experience.to.format("MMMM/YYYY") : 'atualmente'}}
+      .list-inline-item {{experience.to ? experience.to.format("MMMM/YYYY").toLowerCase() : 'atualmente'}}
       .list-inline-item •
       .list-inline-item {{dateDiff(experience.from, experience.to)}} mes(es)
     .mb-1 {{experience.description}}
