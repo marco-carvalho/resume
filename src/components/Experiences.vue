@@ -28,12 +28,12 @@ div
             position: 'Analista de Desenvolvimento Web',
             from: this.$moment('20190101'),
             to: null,
-            description: 'Fui responsável pelo desenvolvimento de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos e clientes externos das áreas de Asset Management, Wealth Management e Investment Banking.',
+            description: 'Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos e clientes externos das áreas de Asset Management, Wealth Management e Investment Banking.',
             tecnologies: [
               {name:"HTML"},
               {name:"CSS"},
               {name: "Javascript", subtecnologies: ["jQuery"]},
-              {name:"C#", subtecnologies: ["Web API", "WCF"]},
+              {name:"C#"},
               {name:"SQL", subtecnologies: ["SQL Server"]},
               {name:"CI/CD", subtecnologies: ["Azure DevOps"]},
             ]
@@ -43,7 +43,7 @@ div
             position: 'Analista de Desenvolvimento Web',
             from: this.$moment('20180801'),
             to: this.$moment('20190101'),
-            description: 'Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos ligados as áreas de Monitoramento, Credenciamento, Prevenção e Antifraude.',
+            description: 'Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos das áreas de Monitoramento, Credenciamento, Prevenção e Antifraude.',
             tecnologies: [
               {name:"C#", subtecnologies: ["WCF"]},
               {name:"Python"},
@@ -71,7 +71,7 @@ div
             position: 'Bolsista de Iniciação Científica',
             from: this.$moment("20170101"),
             to: this.$moment("20170601"),
-            description: 'Fui responsável por implementar e utilizar o framework de Machine Learning chamado Diffusion Map para reduzir a dimensionalidade do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
+            description: 'Fui responsável por implementar e utilizar o framework de Machine Learning chamado Diffusion Map para reduzir a dimensionalidade e extrair funcionalidades do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
             tecnologies: [
               {name: "R"}
             ]
