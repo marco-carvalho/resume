@@ -1,6 +1,6 @@
 <template lang="pug">
 #app.container
-  Header
+  Header.text-center.mb-3
   .row
     .col-md-6
       Experiences
@@ -8,10 +8,10 @@
       Resume
       .row
         .col-md-6
-          Education
+          Education.text-center.mb-3
         .col-md-6
-          Languages
-      Skills
+          Languages.text-center.mb-3
+      Skills.mb-3
       Certifications
   hr
   Footer

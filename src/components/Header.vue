@@ -1,5 +1,5 @@
 <template lang="pug">
-.text-center.mb-3
+div
   h1.font-weight-bold.text-uppercase.m-0 {{name}}
   .list-inline
     .list-inline-item

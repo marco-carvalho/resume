@@ -1,5 +1,5 @@
 <template lang="pug">
-.text-center.mb-3
+div
   .bg-dark.text-uppercase.text-center.text-white.rounded
     h2.font-weight-bold.px-1 {{name}}
   div(v-for='language in languages')
