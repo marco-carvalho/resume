@@ -30,9 +30,9 @@ div
             to: null,
             description: 'Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos e clientes externos das áreas de Asset Management, Wealth Management e Investment Banking.',
             tecnologies: [
-              {name:"HTML"},
-              {name:"CSS"},
-              {name: "Javascript", subtecnologies: ["jQuery"]},
+              {name:"HTML", subtecnologies: ["Pug"]},
+              {name:"CSS", subtecnologies: ["Bootstrap"]},
+              {name:"Javascript", subtecnologies: ["VueJS", "jQuery"]},
               {name:"C#"},
               {name:"SQL", subtecnologies: ["SQL Server"]},
               {name:"CI/CD", subtecnologies: ["Azure DevOps"]},
