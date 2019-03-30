@@ -34,8 +34,11 @@ div
               {name:"CSS", subtecnologies: ["Bootstrap"]},
               {name:"Javascript", subtecnologies: ["VueJS"]},
               {name:"C#"},
-              {name:"SQL", subtecnologies: ["SQL Server"]},
+              {name:"Node.js", subtecnologies: ["Express"]},
+              {name:"SQL", subtecnologies: ["SQL Server", "MySQL"]},
+              {name:"Infra as Code", subtecnologies: ["Docker"]},
               {name:"CI/CD", subtecnologies: ["Azure DevOps"]},
+              {name:"Cloud", subtecnologies: ["AWS"]},
             ]
           },
           {
