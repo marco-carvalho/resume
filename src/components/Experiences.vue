@@ -32,7 +32,7 @@ div
             tecnologies: [
               {name:"HTML", subtecnologies: ["Pug"]},
               {name:"CSS", subtecnologies: ["Bootstrap"]},
-              {name:"Javascript", subtecnologies: ["VueJS", "jQuery"]},
+              {name:"Javascript", subtecnologies: ["VueJS"]},
               {name:"C#"},
               {name:"SQL", subtecnologies: ["SQL Server"]},
               {name:"CI/CD", subtecnologies: ["Azure DevOps"]},
@@ -85,7 +85,7 @@ div
             tecnologies: [
               {name: "HTML"},
               {name: "CSS"},
-              {name: "Javascript", subtecnologies: ["jQuery", "Knockout"]},
+              {name: "Javascript", subtecnologies: ["Knockout"]},
               {name: "C#"},
               {name: "SQL", subtecnologies: ["SQL Server"]},
             ]
