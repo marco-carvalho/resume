@@ -24,7 +24,7 @@ export default {
           name: "Front End",
           tecnologies: [
             { name: "HTML", subtecnologies: ["Pug"] },
-            { name: "CSS", subtecnologies: ["Bootstrap", "SASS"] },
+            { name: "CSS", subtecnologies: ["Bootstrap", "Sass"] },
             { name: "Javascript", subtecnologies: ["VueJS", "React"]},
           ]
         },
@@ -39,7 +39,7 @@ export default {
         {
           name: "DBA",
           tecnologies: [
-            { name: "SQL", subtecnologies: ["SQL Server", "PostgreSQL", "MySQL"]},
+            { name: "SQL", subtecnologies: ["SQL Server", "Postgres", "MySQL"]},
             { name: "NoSQL", subtecnologies: ["MongoDB"]},
             { name: "Cache", subtecnologies: ["Redis"]},
           ]
