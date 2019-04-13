@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   .bg-dark.text-uppercase.text-center.text-white.rounded
-    h2.font-weight-bold.px-1 {{name}}
+    h2.font-weight-bold.px-1 Habilidades
   .row.mb-1(v-for="skill in skills")
     .col-auto
       .bg-dark.text-uppercase.text-center.text-white.rounded
@@ -16,47 +16,8 @@ div
 
 <script>
 export default {
-  data() {
-    return {
-      name: "Habilidades",
-      skills: [
-        {
-          name: "Front End",
-          tecnologies: [
-            { name: "HTML", subtecnologies: ["Pug"] },
-            { name: "CSS", subtecnologies: ["Bootstrap", "Sass"] },
-            { name: "Javascript", subtecnologies: ["VueJS", "React"]},
-          ]
-        },
-        {
-          name: "Back End",
-          tecnologies: [
-            { name: "C#", subtecnologies: ["Web API", "WCF"] },
-            { name: "Node.js", subtecnologies: ["Express"] },
-            { name: "Python", subtecnologies: ["Django"] },
-          ]
-        },
-        {
-          name: "DBA",
-          tecnologies: [
-            { name: "SQL", subtecnologies: ["SQL Server", "Postgres", "MySQL"]},
-            { name: "NoSQL", subtecnologies: ["MongoDB"]},
-            { name: "Cache", subtecnologies: ["Redis"]},
-          ]
-        },
-        {
-          name: "DevOps",
-          tecnologies: [
-            { name: "Linux", subtecnologies: ["Ubuntu"]},
-            { name: "Web Servers", subtecnologies: ["IIS", "Nginx"]},
-            { name: "Infra as Code", subtecnologies: ["Docker"]},
-            { name: "CI/CD", subtecnologies: ["Travis CI", "GoCD", "Azure DevOps"]},
-            { name: "Logs", subtecnologies: ["Splunk"]},
-            { name: "Cloud", subtecnologies: ["AWS"]},
-          ]
-        }
-      ]
-    };
+  props: {
+    skills: Array
   }
-};
+}
 </script>

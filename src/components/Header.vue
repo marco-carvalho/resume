@@ -18,18 +18,12 @@ div
 
 <script>
 export default {
-  data () {
-    return {
-      name: 'Marco Lúcio de Carvalho Júnior',
-      mail: 'marcolucio27@gmail.com',
-      phone: {
-        CCC: 55,
-        cityCode: 21,
-        number: 995710606
-      },
-      github: 'marco-carvalho',
-      linkedin: 'marco-carvalho'
-    }
+  props: {
+    name: String,
+    mail: String,
+    phone: Object,
+    github: String,
+    linkedin: String,
   }
 }
 </script>
