@@ -70,7 +70,7 @@ export default {
             {name:"C#"},
             {name:"Node.js", subtecnologies: ["Express"]},
             {name:"SQL", subtecnologies: ["SQL Server", "Postgres"]},
-            {name:"Infra as Code", subtecnologies: ["Docker"]},
+            {name:"Infra as Code", subtecnologies: ["Docker", "Rancher"]},
             {name:"CI/CD", subtecnologies: ["Azure DevOps"]},
             {name:"Cloud", subtecnologies: ["AWS"]},
           ]
@@ -171,7 +171,7 @@ export default {
           tecnologies: [
             { name: "Linux", subtecnologies: ["Ubuntu"]},
             { name: "Web Servers", subtecnologies: ["IIS", "Nginx"]},
-            { name: "Infra as Code", subtecnologies: ["Docker"]},
+            { name: "Infra as Code", subtecnologies: ["Docker", "Rancher"]},
             { name: "CI/CD", subtecnologies: ["Travis CI", "GoCD", "Azure DevOps"]},
             { name: "Logs", subtecnologies: ["Splunk"]},
             { name: "Cloud", subtecnologies: ["AWS"]},
