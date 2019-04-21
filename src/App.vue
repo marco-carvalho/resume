@@ -69,7 +69,7 @@ export default {
             {name:"Javascript", subtecnologies: ["VueJS"]},
             {name:"C#"},
             {name:"Node.js", subtecnologies: ["Express"]},
-            {name:"SQL", subtecnologies: ["SQL Server", "MySQL"]},
+            {name:"SQL", subtecnologies: ["SQL Server", "Postgres"]},
             {name:"Infra as Code", subtecnologies: ["Docker"]},
             {name:"CI/CD", subtecnologies: ["Azure DevOps"]},
             {name:"Cloud", subtecnologies: ["AWS"]},
