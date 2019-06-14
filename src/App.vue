@@ -1,26 +1,26 @@
 <template lang="pug">
-#app.container
-  Header.text-center.mb-3(
+#app.mx-auto.leading-normal.px-3.w-full(class="lg:w-3/5")
+  Header.mb-3(
     :name="name"
     :mail="mail"
     :phone="phone"
     :github="github"
     :linkedin="linkedin"
   )
-  .row
-    .col-md-6
-      Experiences(:experiences="experiences")
-    .col-md-6
-      Resume(:resume="resume")
-      .row
-        .col-md-6
-          Education.text-center.mb-3(:educations="educations")
-        .col-md-6
-          Languages.text-center.mb-3(:languages="languages")
+  .flex.flex-wrap.-mx-2.mb-3
+    .px-2.w-full(class="md:w-1/2")
+      Experiences.mb-3(:experiences="experiences")
+    .px-2.w-full(class="md:w-1/2")
+      Resume.mb-3(:resume="resume")
+      .flex.flex-wrap.-mx-2
+        .px-2.w-full(class="md:w-1/2")
+          Education.mb-3(:educations="educations")
+        .px-2.w-full(class="md:w-1/2")
+          Languages.mb-3(:languages="languages")
       Skills.mb-3(:skills="skills")
-      Certifications(:certifications="certifications")
-  hr
-  Footer
+      Certifications.mb-3(:certifications="certifications")
+      .h-px.bg-gray-300.mb-3
+      Footer
 </template>
 
 <script>
@@ -51,7 +51,7 @@ export default {
       phone: {
         CCC: 55,
         cityCode: 21,
-        number: 995710606
+        number: "99571-0606",
       },
       github: 'marco-carvalho',
       linkedin: 'marco-carvalho',

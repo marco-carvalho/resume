@@ -1,17 +1,13 @@
 <template lang="pug">
 div
-  .bg-dark.text-uppercase.text-center.text-white.rounded
-    h2.font-weight-bold.px-1 Habilidades
-  .row.mb-1(v-for="skill in skills")
-    .col-auto
-      .bg-dark.text-uppercase.text-center.text-white.rounded
-        h2.font-weight-bold.px-1 {{skill.name}}
-    .col
-      .row.mb-1(v-for="tecnology in skill.tecnologies")
-        .list-inline-item
-          .bg-dark.px-1.rounded.text-white {{tecnology.name}}
-        .list-inline-item(v-for="subtecnology in tecnology.subtecnologies")
-          .bg-secondary.px-1.rounded.text-white {{subtecnology}}
+  .bg-black.uppercase.text-center.text-white.rounded.mb-3.text-2xl
+    .font-bold.px-1 Habilidades
+  .text-center.mb-3(v-for="skill in skills")
+    .inline-block(v-for="tecnology in skill.tecnologies")
+      .inline-block
+        .bg-gray-800.rounded.text-white.mb-1.px-1.mr-1 {{tecnology.name}}
+      .inline-block(v-for="subtecnology in tecnology.subtecnologies")
+        .bg-gray-600.rounded.text-white.mb-1.px-1.mr-1 {{subtecnology}}
 </template>
 
 <script>

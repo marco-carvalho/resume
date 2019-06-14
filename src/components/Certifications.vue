@@ -1,15 +1,11 @@
 <template lang="pug">
 div
-  .bg-dark.text-uppercase.text-center.text-white.rounded
-    h2.font-weight-bold.px-1 Certificados
-  .mb-3(v-for="certification in certifications")
-    h4.font-weight-bold.m-0 {{certification.title}}
-    h5.m-0 {{certification.company}}
-    .list-inline
-      .list-inline-item
-        .text-secondary {{certification.date.format("MMMM/YYYY")}}
-      .list-inline-item
-        a(:href="certification.url") [{{certification.url}}]
+  .bg-black.uppercase.text-center.text-white.rounded.mb-3.text-2xl
+    .font-bold.px-1 Certificados
+  .mb-1(v-for="certification in certifications")
+    .font-bold {{certification.title}}
+    .font-normal {{certification.company}}
+    .inline-block.text-gray-600.mr-1 {{certification.date.format("MMMM/YYYY").toLowerCase()}}
 </template>
 
 <script>

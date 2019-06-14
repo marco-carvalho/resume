@@ -1,8 +1,8 @@
 <template lang="pug">
 div
-  .bg-dark.text-uppercase.text-center.text-white.rounded
-    h2.font-weight-bold.px-1 Resumo
-  p {{resume}}
+  .bg-black.uppercase.text-center.text-white.rounded.mb-3.text-2xl
+    .font-bold.px-1 Resumo
+  .font-normal {{resume}}
 </template>
 
 <script>

@@ -1,10 +1,11 @@
 <template lang="pug">
 div
-  .bg-dark.text-uppercase.text-center.text-white.rounded
-    h2.font-weight-bold.px-1 Idiomas
-  div(v-for='language in languages')
-    strong.mr-1 {{language.name}}:
-    span {{language.level}}
+  .text-center
+    .bg-black.uppercase.text-center.text-white.rounded.mb-3.text-2xl
+      .font-bold.px-1 Idiomas
+    div(v-for='language in languages')
+      .inline.font-bold.mr-1 {{language.name}}:
+      .inline {{language.level}}
 </template>
 
 <script>

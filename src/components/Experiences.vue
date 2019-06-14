@@ -1,20 +1,22 @@
 <template lang="pug">
 div
-  .bg-dark.text-uppercase.text-center.text-white.rounded
-    h2.font-weight-bold.px-1 Histórico Profissional
+  .bg-black.uppercase.text-center.text-white.rounded.mb-3.text-2xl
+    .font-bold.px-1 Histórico Profissional
   .mb-1(v-for='experience in experiences')
-    h4.font-weight-bold.m-0 {{experience.position}}
-    h5.m-0 {{experience.company}}
-    .list-inline.text-secondary
-      .list-inline-item {{experience.from.format("MMMM/YYYY").toLowerCase()}}
-      .list-inline-item -
-      .list-inline-item {{experience.to ? experience.to.format("MMMM/YYYY").toLowerCase() : 'atualmente'}}
-      .list-inline-item •
-      .list-inline-item {{dateDiff(experience.from, experience.to)}} mes(es)
+    .text-xl.font-bold {{experience.position}}
+    .text-lg {{experience.company}}
+    .text-gray-800.mb-1
+      .inline.mr-1 {{experience.from.format("MMMM/YYYY").toLowerCase()}}
+      .inline.mr-1 -
+      .inline.mr-1 {{experience.to ? experience.to.format("MMMM/YYYY").toLowerCase() : 'atualmente'}}
+      .inline.mr-1 •
+      .inline.mr-1 {{dateDiff(experience.from, experience.to)}} mes(es)
     .mb-1 {{experience.description}}
-    .list-inline-item.mb-1(v-for='tecnology in experience.tecnologies')
-      .list-inline-item.bg-dark.px-1.rounded.text-white {{tecnology.name}}
-      .list-inline-item.bg-secondary.px-1.rounded.text-white(v-for='subtecnology in tecnology.subtecnologies') {{subtecnology}}
+    .inline-block(v-for='tecnology in experience.tecnologies')
+      .inline-block
+        .bg-gray-800.rounded.text-white.mb-1.px-1.mr-1 {{tecnology.name}}
+      .inline-block(v-for='subtecnology in tecnology.subtecnologies')
+        .bg-gray-600.rounded.text-white.mb-1.px-1.mr-1 {{subtecnology}}
 </template>
 
 <script>

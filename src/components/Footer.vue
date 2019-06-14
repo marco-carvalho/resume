@@ -1,13 +1,12 @@
 <template lang="pug">
 div
   .text-center
-    span Feito com 
-    a(href='https://pugjs.org') Pug
-    span , 
-    a(href='https://getbootstrap.com/') Bootstrap 
-    span e 
-    a(href='https://vuejs.org/') VueJS
-    span .
+    .inline.mr-1 Feito com
+    a.inline.text-blue-700.underline(href='https://pugjs.org') Pug
+    .inline.mr-1 ,
+    a.inline.text-blue-700.underline.mr-1(href='https://tailwindcss.com/') TailwindCSS
+    .inline.mr-1 e
+    a.inline.text-blue-700.underline(href='https://vuejs.org/') VueJS
   .text-center
-    a(href="https://marco-carvalho.github.io/resume") https://marco-carvalho.github.io/resume
+    a.text-blue-700.underline(href="https://marco-carvalho.github.io/resume") https://marco-carvalho.github.io/resume
 </template>
