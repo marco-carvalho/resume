@@ -22,7 +22,7 @@
     "@vue/cli-plugin-eslint": "^3.8.0",
     "babel-eslint": "^11.0.0-beta.0",
     "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.2.2",
+    "eslint-plugin-vue": "^5.2.3",
     "lint-staged": "^8.2.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
