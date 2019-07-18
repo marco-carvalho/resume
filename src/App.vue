@@ -1,25 +1,25 @@
 <template lang="pug">
-#app.mx-auto.leading-normal.px-3.w-full(class="lg:w-3/5")
-  Header.mb-3(
+#app.mx-auto.px-3.leading-none.w-full(class="lg:w-4/6 lg:px-0")
+  Header.mb-2(
     :name="name"
     :mail="mail"
     :phone="phone"
     :github="github"
     :linkedin="linkedin"
   )
-  .flex.flex-wrap.-mx-2.mb-3
+  .flex.flex-wrap.-mx-2.mb-2
     .px-2.w-full(class="md:w-1/2")
-      Experiences.mb-3(:experiences="experiences")
+      Experiences.mb-2(:experiences="experiences")
     .px-2.w-full(class="md:w-1/2")
-      Resume.mb-3(:resume="resume")
+      Resume.mb-2(:resume="resume")
       .flex.flex-wrap.-mx-2
         .px-2.w-full(class="md:w-1/2")
-          Education.mb-3(:educations="educations")
+          Education.mb-2(:educations="educations")
         .px-2.w-full(class="md:w-1/2")
-          Languages.mb-3(:languages="languages")
-      Skills.mb-3(:skills="skills")
-      Certifications.mb-3(:certifications="certifications")
-      .h-px.bg-gray-300.mb-3
+          Languages.mb-2(:languages="languages")
+      Skills.mb-2(:skills="skills")
+      Certifications.mb-2(:certifications="certifications")
+      .h-px.bg-gray-300.mb-2
       Footer
 </template>
 
@@ -139,14 +139,14 @@ export default {
       ],
       languages: [
         { name: 'Português', level: 'fluente' },
-        { name: 'Inglês', level: 'fluente' },
+        { name: 'Inglês', level: 'avançado' },
       ],
       skills: [
         {
           name: "Front End",
           tecnologies: [
             { name: "HTML", subtecnologies: ["Pug"] },
-            { name: "CSS", subtecnologies: ["Bootstrap", "Sass"] },
+            { name: "CSS", subtecnologies: ["Bootstrap", "Tailwind", "Sass"] },
             { name: "Javascript", subtecnologies: ["VueJS", "React"]},
           ]
         },
