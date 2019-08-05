@@ -10,7 +10,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.20",
     "@fortawesome/free-brands-svg-icons": "^5.10.0",
-    "@fortawesome/free-solid-svg-icons": "^5.10.0",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "moment": "^2.24.0",
     "tailwindcss": "^1.0.6",
     "vue": "^2.6.10",
