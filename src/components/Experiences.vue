@@ -11,7 +11,7 @@ div
       .inline.mr-1 {{experience.to ? experience.to.format("MMMM/YYYY").toLowerCase() : 'atualmente'}}
       .inline.mr-1 •
       .inline.mr-1 {{dateDiff(experience.from, experience.to)}} mes(es)
-    .mb-1 {{experience.description}}
+    .mb-1.hidden(class="md:block") {{experience.description}}
     .inline-block(v-for='tecnology in experience.tecnologies')
       .inline-block
         .bg-gray-800.rounded.text-white.mb-1.p-1.mr-1 {{tecnology.name}}
@@ -30,7 +30,7 @@ div
         const to = this.$moment(date2 || new Date());
         const diff = to.diff(from);
         const duration = this.$moment.duration(diff);
-        const durationAsMonths = duration.asMonths();
+        const durationAsMonths = duration.asMonths()+1;
         return Math.ceil(durationAsMonths);
       }
     }

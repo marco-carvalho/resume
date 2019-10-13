@@ -1,5 +1,5 @@
 <template lang="pug">
-#app.mx-auto.px-3.leading-none.w-full(class="lg:w-4/6 lg:px-0")
+#app.mx-auto.container.leading-none(class="lg:px-0")
   Header.mb-2(
     :name="name"
     :mail="mail"
@@ -7,7 +7,7 @@
     :github="github"
     :linkedin="linkedin"
   )
-  .flex.flex-wrap.-mx-2.mb-2
+  .flex.-mx-2
     .px-2.w-full(class="md:w-1/2")
       Experiences.mb-2(:experiences="experiences")
     .px-2.w-full(class="md:w-1/2")
@@ -46,79 +46,96 @@ export default {
   },
   data() {
     return {
-      name: 'Marco Lúcio de Carvalho Júnior',
-      mail: 'marcolucio27@gmail.com',
+      name: "Marco Lúcio de Carvalho Júnior",
+      mail: "marcolucio27@gmail.com",
       phone: {
         CCC: 55,
         cityCode: 21,
         number: "99571-0606",
       },
-      github: 'marco-carvalho',
-      linkedin: 'marco-carvalho',
-      resume: 'Um cientista da computação apaixonado por desenvolvimento web, interessado por Big Data/Machine Learning/DevOps, motivado pelos bons usos de novas tecnologias, e focado em melhorar e aplicar os meus conhecimentos e competências - tanto os conquistados academicamente quanto os de forma independente - em experiências que me façam crescer profissionalmente.',
+      github: "marco-carvalho",
+      linkedin: "marco-carvalho",
+      resume: "Um cientista da computação apaixonado por desenvolvimento web, motivado pelos bons usos de novas tecnologias, e focado em melhorar e aplicar os meus conhecimentos e competências em experiências que me façam crescer profissionalmente.",
       experiences: [
         {
-          company: 'BTG Pactual',
-          position: 'Analista de Desenvolvimento Web',
-          from: this.$moment('20190101'),
+          company: "Turim Family Office",
+          position: "Analista de Desenvolvimento Web",
+          from: this.$moment("20190601"),
           to: null,
-          description: 'Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos e clientes externos das áreas de Asset Management, Wealth Management e Investment Banking.',
+          description: "Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos das áreas de Onshore/Offshore.",
           tecnologies: [
-            {name:"HTML", subtecnologies: ["Pug"]},
-            {name:"CSS", subtecnologies: ["Bootstrap"]},
-            {name:"Javascript", subtecnologies: ["VueJS"]},
-            {name:"C#"},
-            {name:"Node.js", subtecnologies: ["Express"]},
-            {name:"SQL", subtecnologies: ["SQL Server", "Postgres"]},
-            {name:"Infra as Code", subtecnologies: ["Docker", "Rancher"]},
-            {name:"CI/CD", subtecnologies: ["Azure DevOps"]},
-            {name:"Cloud", subtecnologies: ["AWS"]},
+            {name: "HTML", subtecnologies: ["Pug"]},
+            {name: "CSS", subtecnologies: ["Bootstrap", "Tailwind"]},
+            {name: "Javascript", subtecnologies: ["React", "Vue"]},
+            {name: "C#", subtecnologies: ["Web API"]},
+            {name: "SQL", subtecnologies: ["SQL Server", "Postgres"]},
+            {name: "Linux", subtecnologies: ["Debian"]},
+            {name: "Infra as Code", subtecnologies: ["Docker"]},
+            {name: "CI/CD", subtecnologies: ["TeamCity"]},
           ]
         },
         {
-          company: 'Stone Pagamentos',
-          position: 'Analista de Desenvolvimento Web',
-          from: this.$moment('20180801'),
-          to: this.$moment('20190101'),
-          description: 'Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos das áreas de Monitoramento, Credenciamento, Prevenção e Antifraude.',
+          company: "BTG Pactual",
+          position: "Analista de Desenvolvimento Web",
+          from: this.$moment("20190101"),
+          to: this.$moment("20190601"),
+          description: "Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos e clientes externos das áreas de Asset Management, Wealth Management e Investment Banking.",
           tecnologies: [
-            {name:"C#", subtecnologies: ["WCF"]},
-            {name:"Python"},
-            {name:"SQL", subtecnologies: ["SQL Server"]},
-            {name: "CI/CD", subtecnologies: ["GoCD", "Azure DevOps"]},
-            {name:"Logs", subtecnologies: ["Splunk"]},
+            {name: "HTML", subtecnologies: ["Pug"]},
+            {name: "CSS", subtecnologies: ["Bootstrap"]},
+            {name: "Javascript", subtecnologies: ["VueJS"]},
+            {name: "C#"},
+            {name: "Node.js", subtecnologies: ["Express"]},
+            {name: "SQL", subtecnologies: ["SQL Server", "Postgres"]},
+            {name: "Infra as Code", subtecnologies: ["Docker", "Rancher"]},
+            {name: "CI/CD", subtecnologies: ["Azure DevOps"]},
+            {name: "Cloud", subtecnologies: ["AWS"]},
           ]
         },
         {
-          company: 'Banco Modal',
-          position: 'Estagiário de Desenvolvimento Web',
+          company: "Stone Pagamentos",
+          position: "Analista de Desenvolvimento Web",
+          from: this.$moment("20180801"),
+          to: this.$moment("20181201"),
+          description: "Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos das áreas de Monitoramento, Credenciamento, Prevenção e Antifraude.",
+          tecnologies: [
+            {name: "C#", subtecnologies: ["WCF"]},
+            {name: "Python"},
+            {name: "SQL", subtecnologies: ["SQL Server"]},
+            {name: "CI/CD", subtecnologies: ["Azure DevOps", "GoCD"]},
+            {name: "Logs", subtecnologies: ["Splunk"]},
+          ]
+        },
+        {
+          company: "Banco Modal",
+          position: "Estagiário de Desenvolvimento Web",
           from: this.$moment("20170601"),
-          to: this.$moment('20180701'),
+          to: this.$moment("20180701"),
           description: "Fui responsável pelo desenvolvimento e manutenção de serviços e APIs do projeto do Banco Digital, pela criação de novas funcionalidades para o sistema interno da empresa, além de ter iniciado os projetos de migração dos sites institucionais do banco para a utilização da JAMstack.",
           tecnologies: [
-            {name:"HTML"},
-            {name:"CSS", subtecnologies: ["Bootstrap"]},
-            {name:"Javascript", subtecnologies: ["React"]},
-            {name:"C#", subtecnologies: ["Web API", "WCF"]},
-            {name:"SQL", subtecnologies: ["SQL Server"]},
+            {name: "HTML"},
+            {name: "CSS", subtecnologies: ["Bootstrap"]},
+            {name: "Javascript", subtecnologies: ["React"]},
+            {name: "C#", subtecnologies: ["Web API", "WCF"]},
+            {name: "SQL", subtecnologies: ["SQL Server"]},
           ]
         },
         {
-          company: 'CEFET/RJ',
-          position: 'Bolsista de Iniciação Científica',
+          company: "CEFET/RJ",
+          position: "Bolsista de Iniciação Científica",
           from: this.$moment("20170101"),
           to: this.$moment("20170601"),
-          description: 'Fui responsável por implementar e utilizar o framework de Machine Learning chamado Diffusion Map para reduzir a dimensionalidade e extrair funcionalidades do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.',
+          description: "Fui responsável por implementar e utilizar o framework de Machine Learning chamado Diffusion Map para reduzir a dimensionalidade e extrair funcionalidades do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.",
           tecnologies: [
             {name: "R"}
           ]
         },
         {
-          company: 'Itaú Unibanco',
-          position: 'Estagiário de Desenvolvimento Web',
-          from: this.$moment("20150501"),
+          company: "Itaú Unibanco",
+          position: "Estagiário de Desenvolvimento Web",
+          from: this.$moment("20150101"),
           to: this.$moment("20161201"),
-          description: 'Fui responsável pelo desenvolvimento e manutenção de projetos web dos clientes da área de Previdência, corrigindo bugs e melhorando o desempenho.',
+          description: "Fui responsável pelo desenvolvimento e manutenção de projetos web dos clientes da área de Previdência, corrigindo bugs e melhorando o desempenho.",
           tecnologies: [
             {name: "HTML"},
             {name: "CSS"},
@@ -138,8 +155,8 @@ export default {
         }
       ],
       languages: [
-        { name: 'Português', level: 'fluente' },
-        { name: 'Inglês', level: 'avançado' },
+        { name: "Português", level: "fluente" },
+        { name: "Inglês", level: "avançado" },
       ],
       skills: [
         {
@@ -169,10 +186,10 @@ export default {
         {
           name: "DevOps",
           tecnologies: [
-            { name: "Linux", subtecnologies: ["Ubuntu"]},
+            { name: "Linux", subtecnologies: ["Ubuntu", "Debian"]},
             { name: "Web Servers", subtecnologies: ["IIS", "Nginx"]},
             { name: "Infra as Code", subtecnologies: ["Docker", "Rancher"]},
-            { name: "CI/CD", subtecnologies: ["Travis CI", "GoCD", "Azure DevOps"]},
+            { name: "CI/CD", subtecnologies: ["Travis CI", "GoCD", "TeamCity"]},
             { name: "Logs", subtecnologies: ["Splunk"]},
             { name: "Cloud", subtecnologies: ["AWS"]},
           ]
