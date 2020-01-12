@@ -12,13 +12,13 @@
       Experiences.mb-2(:experiences="experiences")
     .px-2.w-full(class="md:w-1/2")
       Resume.mb-2(:resume="resume")
+      Skills.mb-2(:skills="skills")
+      Certifications.mb-2(:certifications="certifications")
       .flex.flex-wrap.-mx-2
         .px-2.w-full(class="md:w-1/2")
           Education.mb-2(:educations="educations")
         .px-2.w-full(class="md:w-1/2")
           Languages.mb-2(:languages="languages")
-      Skills.mb-2(:skills="skills")
-      Certifications.mb-2(:certifications="certifications")
       .h-px.bg-gray-300.mb-2
       Footer
 </template>
