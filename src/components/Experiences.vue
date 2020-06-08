@@ -20,19 +20,19 @@ div
 </template>
 
 <script>
-  export default {
-    props: {
-      experiences: Array
-    },
-    methods: {
-      dateDiff(date1, date2) {
-        const from = this.$moment(date1);
-        const to = this.$moment(date2 || new Date());
-        const diff = to.diff(from);
-        const duration = this.$moment.duration(diff);
-        const durationAsMonths = duration.asMonths()+1;
-        return Math.ceil(durationAsMonths);
-      }
+export default {
+  props: {
+    experiences: Array
+  },
+  methods: {
+    dateDiff(date1, date2) {
+      const from = this.$moment(date1);
+      const to = this.$moment(date2 || new Date());
+      const diff = to.diff(from);
+      const duration = this.$moment.duration(diff);
+      const durationAsMonths = duration.asMonths() + 1;
+      return Math.ceil(durationAsMonths);
     }
   }
+};
 </script>
