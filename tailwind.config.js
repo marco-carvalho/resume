@@ -1,8 +1,11 @@
 module.exports = {
-  purge: [
-    "./src/**/*.html",
-    "./src/**/*.vue",
-  ],
+  purge: {
+    enabled: true,
+    content: [
+      "./src/**/*.html",
+      "./src/**/*.vue",
+    ]
+  },
   theme: {},
   variants: {},
   plugins: [],
