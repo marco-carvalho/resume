@@ -64,13 +64,13 @@ export default {
           to: null,
           description: "Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos das áreas de Onshore/Offshore.",
           tecnologies: [
-            {name: "HTML", subtecnologies: ["Pug"]},
             {name: "CSS", subtecnologies: ["Bootstrap", "Tailwind"]},
-            {name: "Javascript", subtecnologies: ["React", "Vue"]},
+            {name: "Javascript", subtecnologies: ["React"]},
+            {name: "Mobile", subtecnologies: ["React Native"]},
             {name: "C#", subtecnologies: ["Web API"]},
-            {name: "SQL", subtecnologies: ["SQL Server", "Postgres"]},
-            {name: "Linux", subtecnologies: ["Debian"]},
-            {name: "Infra as Code", subtecnologies: ["Docker"]},
+            {name: "SQL", subtecnologies: ["SQL Server"]},
+            {name: "Message Broker", subtecnologies: ["RabbitMQ"]},
+            {name: "Web Server", subtecnologies: ["IIS"]},
             {name: "CI/CD", subtecnologies: ["TeamCity"]},
           ]
         },
