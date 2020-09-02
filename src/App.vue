@@ -165,6 +165,7 @@ export default {
             { name: "HTML", subtecnologies: ["Pug"] },
             { name: "CSS", subtecnologies: ["Bootstrap", "Tailwind", "Sass"] },
             { name: "Javascript", subtecnologies: ["VueJS", "React"]},
+            { name: "Mobile", subtecnologies: ["React Native"]},
           ]
         },
         {
@@ -173,6 +174,7 @@ export default {
             { name: "C#", subtecnologies: ["Web API", "WCF"] },
             { name: "Node.js", subtecnologies: ["Express"] },
             { name: "Python", subtecnologies: ["Django"] },
+            { name: "Message Broker", subtecnologies: ["RabbitMQ"] },
           ]
         },
         {
