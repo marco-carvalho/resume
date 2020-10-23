@@ -62,7 +62,7 @@ export default {
           position: "Analista de Desenvolvimento Web",
           from: this.$moment("20190601"),
           to: null,
-          description: "Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos das áreas de Consolidação/Onshore/Offshore.",
+          description: "Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos das áreas de Wealth Management.",
           tecnologies: [
             {name: "CSS", subtecnologies: ["Bootstrap", "Tailwind"]},
             {name: "Javascript", subtecnologies: ["React"]},
@@ -79,7 +79,7 @@ export default {
           position: "Analista de Desenvolvimento Web",
           from: this.$moment("20190101"),
           to: this.$moment("20190601"),
-          description: "Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos e clientes externos das áreas de Asset Management, Wealth Management e Investment Banking.",
+          description: "Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos e clientes externos das áreas de Asset Management.",
           tecnologies: [
             {name: "HTML", subtecnologies: ["Pug"]},
             {name: "CSS", subtecnologies: ["Bootstrap"]},
