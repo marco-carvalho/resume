@@ -55,7 +55,7 @@ export default {
       },
       github: "marco-carvalho",
       linkedin: "marco-carvalho",
-      resume: "Um cientista da computação apaixonado por desenvolvimento web, motivado pelos bons usos de novas tecnologias, e focado em melhorar e aplicar os meus conhecimentos e competências em experiências que me façam crescer profissionalmente.",
+      resume: "Um cientista da computação apaixonado por desenvolvimento web, motivado pelos bons usos de novas tecnologias, com experiência majoritária no mercado financeira, entusiasta do open-source, e focado em melhorar e aplicar os meus conhecimentos e competências em oportunidades que me façam crescer profissionalmente.",
       experiences: [
         {
           company: "Turim Family Office",
