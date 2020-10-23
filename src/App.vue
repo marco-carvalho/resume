@@ -1,13 +1,13 @@
 <template lang="pug">
 #app.mx-auto.container.leading-none(class="lg:px-0")
-  Header.mb-2(
+  Header(
     :name="name"
     :mail="mail"
     :phone="phone"
     :github="github"
     :linkedin="linkedin"
   )
-  .flex.-mx-2
+  .flex.flex-wrap.-mx-2.p-2
     .px-2.w-full(class="md:w-1/2")
       Experiences.mb-2(:experiences="experiences")
     .px-2.w-full(class="md:w-1/2")
