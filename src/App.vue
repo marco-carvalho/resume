@@ -72,6 +72,7 @@ export default {
             {name: "Message Broker", subtecnologies: ["RabbitMQ"]},
             {name: "Web Server", subtecnologies: ["IIS"]},
             {name: "CI/CD", subtecnologies: ["TeamCity"]},
+            {name: "Monitoring", subtecnologies: ["Grafana"]},
           ]
         },
         {
@@ -194,6 +195,7 @@ export default {
             { name: "CI/CD", subtecnologies: ["Travis CI", "GoCD", "TeamCity"]},
             { name: "Logs", subtecnologies: ["Splunk"]},
             { name: "Cloud", subtecnologies: ["AWS"]},
+            { name: "Monitoring", subtecnologies: ["Grafana"]},
           ]
         }
       ],
