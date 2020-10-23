@@ -48,11 +48,6 @@ export default {
     return {
       name: "Marco Lúcio de Carvalho Júnior",
       mail: "marcolucio27@gmail.com",
-      phone: {
-        CCC: 55,
-        cityCode: 21,
-        number: "99571-0606",
-      },
       github: "marco-carvalho",
       linkedin: "marco-carvalho",
       resume: "Um cientista da computação apaixonado por desenvolvimento web, motivado pelos bons usos de novas tecnologias, com experiência majoritária no mercado financeira, entusiasta do open-source, e focado em melhorar e aplicar os meus conhecimentos e competências em oportunidades que me façam crescer profissionalmente.",

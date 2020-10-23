@@ -5,9 +5,6 @@
     .fa.fa-envelope.mr-1
     a.inline.text-blue-700.underline(:href="'mailto:' + mail") {{mail}}
   .inline-block.mx-3
-    .fa.fa-phone.mr-1
-    .inline +{{phone.CCC}} {{phone.cityCode}} {{phone.number}}
-  .inline-block.mx-3
     .fab.fa-github.mr-1
     a.inline.text-blue-700.underline(:href="'https://github.com/' + github") {{github}}
   .inline-block.mx-3
