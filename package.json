@@ -13,7 +13,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "core-js": "^3.8.0",
     "moment": "^2.29.1",
-    "tailwindcss": "^1.9.6",
+    "tailwindcss": "^2.0.1",
     "vue": "^2.6.12",
     "vue-router": "^3.4.9"
   },
