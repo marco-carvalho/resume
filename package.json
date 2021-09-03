@@ -11,7 +11,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "core-js": "^3.16.4",
+    "core-js": "^3.17.2",
     "moment": "^2.29.1",
     "tailwindcss": "^2.2.9",
     "vue": "^2.6.14",
