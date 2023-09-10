@@ -21,3 +21,5 @@ jobs:
           if [[ "${{ github.actor }}" == 'dependabot[bot]' || "${{ github.actor }}" == 'dependabot-preview[bot]' ]]; then
             gh pr merge "${{ github.event.pull_request.number }}" --auto --squash
           fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
