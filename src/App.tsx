@@ -23,15 +23,19 @@ function App() {
         technologies: [
           { name: "HTML" },
           { name: "CSS", subtechnologies: ["Bootstrap"] },
-          { name: "Javascript", subtechnologies: ["React"] },
+          { name: "Javascript", subtechnologies: ["Typescript", "React"] },
           { name: "Mobile", subtechnologies: ["React Native"] },
-          { name: "C#", subtechnologies: [".NET Core"] },
-          { name: "SQL", subtechnologies: ["SQL Server"] },
+          { name: "C#", subtechnologies: [".NET"] },
+          { name: "Python", subtechnologies: ["Flask"] },
+          { name: "Node", subtechnologies: ["Express"] },
+          { name: "SQL", subtechnologies: ["SQL Server", "Postgres"] },
+          { name: "Infra as Code", subtechnologies: ["Docker", "Terraform"] },
           { name: "Message Broker", subtechnologies: ["RabbitMQ"] },
-          { name: "Web Server", subtechnologies: ["IIS"] },
-          { name: "CI/CD", subtechnologies: ["TeamCity"] },
-          { name: "Monitoring", subtechnologies: ["Grafana"] },
+          { name: "Web Server", subtechnologies: ["IIS", "Nginx"] },
+          { name: "CI/CD", subtechnologies: ["GitHub Actions", "TeamCity"] },
+          { name: "Monitoring", subtechnologies: ["Grafana", "Zabbix"] },
           { name: "Code Quality", subtechnologies: ["SonarQube"] },
+          { name: "Cloud", subtechnologies: ["AWS", "Azure"] },
         ]
       },
       {
@@ -122,9 +126,9 @@ function App() {
       {
         name: "Front End",
         technologies: [
-          { name: "HTML", subtechnologies: ["Pug"] },
-          { name: "CSS", subtechnologies: ["Tailwind", "Bootstrap"] },
-          { name: "Javascript", subtechnologies: ["React", "VueJS"] },
+          { name: "HTML" },
+          { name: "CSS", subtechnologies: ["Tailwind"] },
+          { name: "Javascript", subtechnologies: ["React"] },
           { name: "Mobile", subtechnologies: ["React Native"] },
         ]
       },
@@ -133,7 +137,7 @@ function App() {
         technologies: [
           { name: "C#", subtechnologies: [".NET"] },
           { name: "Node.js", subtechnologies: ["Express"] },
-          { name: "Python", subtechnologies: ["Django"] },
+          { name: "Python", subtechnologies: ["Flask"] },
           { name: "Message Broker", subtechnologies: ["RabbitMQ"] },
         ]
       },
@@ -141,22 +145,20 @@ function App() {
         name: "DBA",
         technologies: [
           { name: "SQL", subtechnologies: ["SQL Server", "Postgres", "MySQL"] },
-          { name: "NoSQL", subtechnologies: ["MongoDB"] },
           { name: "Cache", subtechnologies: ["Redis"] },
         ]
       },
       {
         name: "DevOps",
         technologies: [
-          { name: "Linux", subtechnologies: ["Ubuntu", "Debian"] },
-          { name: "Web Servers", subtechnologies: ["IIS", "Nginx"] },
-          { name: "Infra as Code", subtechnologies: ["Docker", "Rancher"] },
+          { name: "Linux", subtechnologies: ["Ubuntu"] },
+          { name: "Infra as Code", subtechnologies: ["Docker", "Terraform"] },
+          { name: "Message Broker", subtechnologies: ["RabbitMQ"] },
+          { name: "Web Server", subtechnologies: ["IIS", "Nginx"] },
           { name: "CI/CD", subtechnologies: ["GitHub Actions", "TeamCity"] },
-          { name: "Logs", subtechnologies: ["Splunk"] },
-          { name: "Cloud", subtechnologies: ["AWS"] },
-          { name: "Monitoring", subtechnologies: ["Grafana"] },
+          { name: "Monitoring", subtechnologies: ["Grafana", "Zabbix"] },
           { name: "Code Quality", subtechnologies: ["SonarQube"] },
-          { name: "Code Security", subtechnologies: ["Synk"] },
+          { name: "Cloud", subtechnologies: ["AWS", "Azure"] },
         ]
       }
     ],
