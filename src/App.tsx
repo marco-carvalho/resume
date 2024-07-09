@@ -224,7 +224,7 @@ function App() {
                       <div key={i}>
                         <div className="font-bold">{education.degree} - {education.university}</div>
                         <div className="font-bold">{education.course}</div>
-                        <div className="d-block">{DateTime.fromJSDate(education.from).toFormat('MMMM/yyyy')} - {DateTime.fromJSDate(education.to).setLocale("pt-BR").toFormat('MMMM/yyyy')}</div>
+                        <div className="d-block">{DateTime.fromJSDate(education.from).toFormat('MMMM/yyyy')} - {DateTime.fromJSDate(education.to).toFormat('MMMM/yyyy')}</div>
                       </div>
                     )
                   })}
