@@ -1,7 +1,5 @@
 import { DateTime } from "luxon";
 
-import Technology from "./Technology";
-
 const Experience = (experience: {
     position: string
     company: string
