@@ -12,17 +12,17 @@ function App() {
     mail: "marcolucio27@gmail.com",
     github: "marco-carvalho",
     linkedin: "marco-carvalho",
-    resume: "Um cientista da computação apaixonado por desenvolvimento web, motivado pelos bons usos de novas tecnologias, com experiência majoritária no mercado financeira, entusiasta do open-source, e focado em melhorar e aplicar os meus conhecimentos e competências em oportunidades que me façam crescer profissionalmente.",
+    resume: "A computer scientist passionate about web development, motivated by the good uses of new technologies, with extensive experience in the financial market, an open-source enthusiast, and focused on improving and applying my knowledge and skills in opportunities that help me grow professionally.",
     experiences: [
       {
         company: "Turim Multi-Family Office",
-        position: "Analista de Desenvolvimento Web",
+        position: "Tech Lead & Senior Software Engineer",
         from: new Date(2019, 5, 1),
         to: undefined,
-        description: "Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos das áreas de Wealth Management.",
+        description: "Lead a team in designing and implementing full-stack solutions, ensuring software robustness, scalability, and performance. Collaborate with stakeholders, mentor junior developers, and promote continuous improvement.",
         technologies: [
           { name: "HTML" },
-          { name: "CSS", subtechnologies: ["Bootstrap"] },
+          { name: "CSS", subtechnologies: ["TailwindCSS"] },
           { name: "Javascript", subtechnologies: ["Typescript", "React"] },
           { name: "Mobile", subtechnologies: ["React Native"] },
           { name: "C#", subtechnologies: [".NET"] },
@@ -36,14 +36,15 @@ function App() {
           { name: "Monitoring", subtechnologies: ["Grafana", "Zabbix"] },
           { name: "Code Quality", subtechnologies: ["SonarQube"] },
           { name: "Cloud", subtechnologies: ["AWS", "Azure"] },
+          { name: "Cache", subtechnologies: ["Redis"] },
         ]
       },
       {
         company: "BTG Pactual",
-        position: "Analista de Desenvolvimento Web",
+        position: "Junior Software Engineer",
         from: new Date(2019, 0, 1),
         to: new Date(2019, 5, 1),
-        description: "Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que atendem as necessidades e demandas dos funcionários internos e clientes externos das áreas de Asset Management.",
+        description: "Developed and maintained interfaces and APIs for Asset Management, Wealth Management, and Investment Banking, enhancing user experience and efficiency.",
         technologies: [
           { name: "HTML", subtechnologies: ["Pug"] },
           { name: "CSS", subtechnologies: ["Bootstrap"] },
@@ -58,10 +59,10 @@ function App() {
       },
       {
         company: "Stone Pagamentos",
-        position: "Analista de Desenvolvimento Web",
+        position: "Junior Software Engineer",
         from: new Date(2018, 7, 1),
         to: new Date(2018, 11, 1),
-        description: "Fui responsável pelo desenvolvimento e manutenção de interfaces e APIs que permitem a identificação e análise de lojistas que apresentaram comportamento transacional suspeito, suprindo a necessidade dos funcionários internos das áreas de Monitoramento, Credenciamento, Prevenção e Antifraude.",
+        description: "Developed interfaces and APIs for monitoring transactional behavior in the Risk squad, improving fraud detection and prevention.",
         technologies: [
           { name: "C#", subtechnologies: ["WCF"] },
           { name: "Python" },
@@ -72,10 +73,10 @@ function App() {
       },
       {
         company: "Banco Modal",
-        position: "Estagiário de Desenvolvimento Web",
+        position: "Intern Software Engineer",
         from: new Date(2017, 5, 1),
         to: new Date(2018, 6, 1),
-        description: "Fui responsável pelo desenvolvimento e manutenção de serviços e APIs do projeto do Banco Digital, pela criação de novas funcionalidades para o sistema interno da empresa, além de ter iniciado os projetos de migração dos sites institucionais do banco para a utilização da JAMstack.",
+        description: "Contributed to the Digital Bank project, developing services and APIs, creating internal system functionalities, and initiating JAMstack migrations.",
         technologies: [
           { name: "HTML" },
           { name: "CSS", subtechnologies: ["Bootstrap"] },
@@ -86,20 +87,20 @@ function App() {
       },
       {
         company: "CEFET/RJ",
-        position: "Bolsista de Iniciação Científica",
+        position: "Scientific Initiation Scholarship Holder",
         from: new Date(2017, 0, 1),
         to: new Date(2017, 5, 1),
-        description: "Fui responsável por implementar e utilizar o framework de Machine Learning chamado Diffusion Map para reduzir a dimensionalidade e extrair funcionalidades do dataset de flores Iris e de datasets formados por características de estrelas, como coordenadas e informações referentes a luminosidade.",
+        description: "Implemented the Machine Learning framework Diffusion Map for dimensionality reduction, analyzing datasets like the Iris flower dataset and astronomical data.",
         technologies: [
           { name: "R" }
         ]
       },
       {
         company: "Itaú Unibanco",
-        position: "Estagiário de Desenvolvimento Web",
+        position: "Intern Software Engineer",
         from: new Date(2015, 0, 1),
         to: new Date(2016, 11, 1),
-        description: "Fui responsável pelo desenvolvimento e manutenção de projetos web dos clientes da área de Previdência, corrigindo bugs e melhorando o desempenho.",
+        description: "Developed and maintained web projects for Social Security clients, focusing on bug fixes and performance improvements.",
         technologies: [
           { name: "HTML" },
           { name: "CSS" },
@@ -111,16 +112,16 @@ function App() {
     ],
     educations: [
       {
-        degree: "Bacharelado",
+        degree: "Bachelor's Degree",
         university: "CEFET/RJ",
-        course: "Ciência da Computação",
+        course: "Computer Science",
         from: new Date(2012, 5),
         to: new Date(2018, 11),
       }
     ],
     languages: [
-      { name: "Português", level: "fluente" },
-      { name: "Inglês", level: "avançado" },
+      { name: "Portuguese", level: "fluent" },
+      { name: "English", level: "advanced" },
     ],
     skills: [
       {
@@ -128,7 +129,7 @@ function App() {
         technologies: [
           { name: "HTML" },
           { name: "CSS", subtechnologies: ["Tailwind"] },
-          { name: "Javascript", subtechnologies: ["React"] },
+          { name: "Javascript", subtechnologies: ["Typescript", "React"] },
           { name: "Mobile", subtechnologies: ["React Native"] },
         ]
       },
@@ -166,7 +167,7 @@ function App() {
 
   return (
     <div id="app" className="mx-auto container leading-none space-y-2">
-      <div className="text-center text-4xl font-bold uppercase">{CV.name}</div>
+      <div className="text-center text-3xl font-bold uppercase">{CV.name}</div>
       <div className="text-center flex flex-wrap space-y-2 md:space-y-0 print:space-y-0">
         <div className="w-full md:w-1/3 print:w-1/3 space-x-1">
           <FontAwesomeIcon icon={faEnvelope} />
@@ -183,21 +184,23 @@ function App() {
       </div>
       <div className="flex flex-wrap">
         <div className="px-2 w-full md:w-1/2 print:w-1/2 space-y-1">
-          <div className="bg-black uppercase text-center text-white rounded text-2xl">
-            <div className="font-bold p-1">Histórico Profissional</div>
+          <div className="bg-black uppercase text-center text-white rounded text-xl">
+            <div className="font-bold p-1">Professional History</div>
           </div>
-          {CV.experiences.map((experience, i) => <Experience key={i} {...experience} />)}
+          <div className="space-y-4">
+            {CV.experiences.map((experience, i) => <Experience key={i} {...experience} />)}
+          </div>
         </div>
         <div className="px-2 w-full md:w-1/2 print:w-1/2">
           <div className="mb-2">
-            <div className="bg-black uppercase text-center text-white rounded mb-2 text-2xl">
-              <div className="font-bold p-1">Resumo</div>
+            <div className="bg-black uppercase text-center text-white rounded mb-2 text-xl">
+              <div className="font-bold p-1">Resume</div>
             </div>
             <div className="font-normal">{CV.resume}</div>
           </div>
           <div className="mb-2">
-            <div className="bg-black uppercase text-center text-white rounded mb-2 text-2xl">
-              <div className="font-bold p-1">Habilidades</div>
+            <div className="bg-black uppercase text-center text-white rounded mb-2 text-xl">
+              <div className="font-bold p-1">Skills</div>
             </div>
             {CV.skills.map(skill => {
               return (
@@ -213,8 +216,8 @@ function App() {
             <div className="px-2 w-full md:w-1/2">
               <div className="mb-2">
                 <div className="text-center">
-                  <div className="bg-black uppercase text-center text-white rounded mb-2 text-2xl">
-                    <div className="font-bold p-1">Educação</div>
+                  <div className="bg-black uppercase text-center text-white rounded mb-2 text-xl">
+                    <div className="font-bold p-1">Education</div>
                   </div>
                   {CV.educations.map((education, i) => {
                     return (
@@ -231,8 +234,8 @@ function App() {
             <div className="px-2 w-full md:w-1/2">
               <div className="mb-2">
                 <div className="text-center">
-                  <div className="bg-black uppercase text-center text-white rounded mb-2 text-2xl">
-                    <div className="font-bold p-1">Idiomas</div>
+                  <div className="bg-black uppercase text-center text-white rounded mb-2 text-xl">
+                    <div className="font-bold p-1">Languages</div>
                   </div>
                   {CV.languages.map((language, i) => {
                     return (
@@ -248,13 +251,13 @@ function App() {
           </div>
           <div className="h-px bg-gray-300 mb-2"></div>
           <div>
-            <div className="text-center">
-              <div className="inline">Feito com </div>
-              <a href="https://reactjs.org" className="inline text-gray-500">React</a>
-              <div className="inline"> e </div>
-              <a href="https://tailwindcss.com/" className="inline text-gray-500">TailwindCSS</a>
+            <div className="text-center space-x-1">
+              <div className="inline">Made with</div>
+              <a href="https://reactjs.org" className="inline underline text-gray-500">React</a>
+              <div className="inline">and</div>
+              <a href="https://tailwindcss.com/" className="inline underline text-gray-500">TailwindCSS</a>
             </div>
-            <div className="text-center"><a href="https://marco-carvalho.github.io/resume" className="text-gray-500">https://marco-carvalho.github.io/resume</a></div>
+            <div className="text-center underline"><a href="https://marco-carvalho.github.io/resume" className="text-gray-500">https://marco-carvalho.github.io/resume</a></div>
           </div>
         </div>
       </div>
