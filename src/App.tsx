@@ -74,10 +74,8 @@ function App() {
               {CV.educations.map((education, i) => {
                 return (
                   <div key={i}>
-                    <div className="font-bold">
-                      {education.degree} - {education.university}
-                    </div>
-                    <div className="font-bold">{education.course}</div>
+                    <div className="font-bold">{education.university}</div>
+                    <div className="font-semibold">{education.degree} - {education.course}</div>
                     <div className="d-block">
                       {DateTime.fromJSDate(education.from).toFormat(
                         "MMMM/yyyy"

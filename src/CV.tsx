@@ -108,8 +108,8 @@ export default {
   ],
   educations: [
     {
-      degree: "Bachelor's Degree",
       university: "CEFET/RJ",
+      degree: "Bachelor's Degree",
       course: "Computer Science",
       from: new Date(2012, 5),
       to: new Date(2018, 11),
