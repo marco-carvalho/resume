@@ -13,23 +13,23 @@ export default {
       to: undefined,
       description:
         "Lead a team in designing and implementing full-stack solutions, ensuring software robustness, scalability, and performance. Collaborate with stakeholders, mentor junior developers, and promote continuous improvement.",
-      technologies: [
+      skills: [
         { name: "HTML" },
-        { name: "CSS", subtechnologies: ["TailwindCSS"] },
-        { name: "Javascript", subtechnologies: ["Typescript", "React"] },
-        { name: "Mobile", subtechnologies: ["React Native"] },
-        { name: "C#", subtechnologies: [".NET"] },
-        { name: "Python", subtechnologies: ["Flask"] },
-        { name: "Node", subtechnologies: ["Express"] },
-        { name: "SQL", subtechnologies: ["SQL Server", "Postgres"] },
-        { name: "Infra as Code", subtechnologies: ["Docker", "Terraform"] },
-        { name: "Message Broker", subtechnologies: ["RabbitMQ"] },
-        { name: "Web Server", subtechnologies: ["IIS", "Nginx"] },
-        { name: "CI/CD", subtechnologies: ["GitHub Actions", "TeamCity"] },
-        { name: "Monitoring", subtechnologies: ["Grafana", "Zabbix"] },
-        { name: "Code Quality", subtechnologies: ["SonarQube"] },
-        { name: "Cloud", subtechnologies: ["AWS", "Azure"] },
-        { name: "Cache", subtechnologies: ["Redis"] },
+        { name: "CSS", subskills: ["TailwindCSS"] },
+        { name: "Javascript", subskills: ["Typescript", "React"] },
+        { name: "Mobile", subskills: ["React Native"] },
+        { name: "C#", subskills: [".NET"] },
+        { name: "Python", subskills: ["Flask"] },
+        { name: "Node", subskills: ["Express"] },
+        { name: "SQL", subskills: ["SQL Server", "Postgres"] },
+        { name: "Infra as Code", subskills: ["Docker", "Terraform"] },
+        { name: "Message Broker", subskills: ["RabbitMQ"] },
+        { name: "Web Server", subskills: ["IIS", "Nginx"] },
+        { name: "CI/CD", subskills: ["GitHub Actions", "TeamCity"] },
+        { name: "Monitoring", subskills: ["Grafana", "Zabbix"] },
+        { name: "Code Quality", subskills: ["SonarQube"] },
+        { name: "Cloud", subskills: ["AWS", "Azure"] },
+        { name: "Cache", subskills: ["Redis"] },
       ],
     },
     {
@@ -39,16 +39,16 @@ export default {
       to: new Date(2019, 5, 1),
       description:
         "Developed and maintained interfaces and APIs for Asset Management, Wealth Management, and Investment Banking, enhancing user experience and efficiency.",
-      technologies: [
-        { name: "HTML", subtechnologies: ["Pug"] },
-        { name: "CSS", subtechnologies: ["Bootstrap"] },
-        { name: "Javascript", subtechnologies: ["VueJS"] },
+      skills: [
+        { name: "HTML", subskills: ["Pug"] },
+        { name: "CSS", subskills: ["Bootstrap"] },
+        { name: "Javascript", subskills: ["VueJS"] },
         { name: "C#" },
-        { name: "Node.js", subtechnologies: ["Express"] },
-        { name: "SQL", subtechnologies: ["SQL Server", "Postgres"] },
-        { name: "Infra as Code", subtechnologies: ["Docker", "Rancher"] },
-        { name: "CI/CD", subtechnologies: ["Azure DevOps"] },
-        { name: "Cloud", subtechnologies: ["AWS"] },
+        { name: "Node.js", subskills: ["Express"] },
+        { name: "SQL", subskills: ["SQL Server", "Postgres"] },
+        { name: "Infra as Code", subskills: ["Docker", "Rancher"] },
+        { name: "CI/CD", subskills: ["Azure DevOps"] },
+        { name: "Cloud", subskills: ["AWS"] },
       ],
     },
     {
@@ -58,12 +58,12 @@ export default {
       to: new Date(2018, 11, 1),
       description:
         "Developed interfaces and APIs for monitoring transactional behavior in the Risk squad, improving fraud detection and prevention.",
-      technologies: [
-        { name: "C#", subtechnologies: ["WCF"] },
+      skills: [
+        { name: "C#", subskills: ["WCF"] },
         { name: "Python" },
-        { name: "SQL", subtechnologies: ["SQL Server"] },
-        { name: "CI/CD", subtechnologies: ["Azure DevOps", "GoCD"] },
-        { name: "Logs", subtechnologies: ["Splunk"] },
+        { name: "SQL", subskills: ["SQL Server"] },
+        { name: "CI/CD", subskills: ["Azure DevOps", "GoCD"] },
+        { name: "Logs", subskills: ["Splunk"] },
       ],
     },
     {
@@ -73,12 +73,12 @@ export default {
       to: new Date(2018, 6, 1),
       description:
         "Contributed to the Digital Bank project, developing services and APIs, creating internal system functionalities, and initiating JAMstack migrations.",
-      technologies: [
+      skills: [
         { name: "HTML" },
-        { name: "CSS", subtechnologies: ["Bootstrap"] },
-        { name: "Javascript", subtechnologies: ["React"] },
-        { name: "C#", subtechnologies: ["Web API", "WCF"] },
-        { name: "SQL", subtechnologies: ["SQL Server"] },
+        { name: "CSS", subskills: ["Bootstrap"] },
+        { name: "Javascript", subskills: ["React"] },
+        { name: "C#", subskills: ["Web API", "WCF"] },
+        { name: "SQL", subskills: ["SQL Server"] },
       ],
     },
     {
@@ -88,7 +88,7 @@ export default {
       to: new Date(2017, 5, 1),
       description:
         "Implemented the Machine Learning framework Diffusion Map for dimensionality reduction, analyzing datasets like the Iris flower dataset and astronomical data.",
-      technologies: [{ name: "R" }],
+      skills: [{ name: "R" }],
     },
     {
       company: "Itaú Unibanco",
@@ -97,12 +97,12 @@ export default {
       to: new Date(2016, 11, 1),
       description:
         "Developed and maintained web projects for Social Security clients, focusing on bug fixes and performance improvements.",
-      technologies: [
+      skills: [
         { name: "HTML" },
         { name: "CSS" },
-        { name: "Javascript", subtechnologies: ["Knockout"] },
+        { name: "Javascript", subskills: ["Knockout"] },
         { name: "C#" },
-        { name: "SQL", subtechnologies: ["SQL Server"] },
+        { name: "SQL", subskills: ["SQL Server"] },
       ],
     },
   ],
@@ -122,40 +122,40 @@ export default {
   skills: [
     {
       name: "Front End",
-      technologies: [
+      skills: [
         { name: "HTML" },
-        { name: "CSS", subtechnologies: ["Tailwind"] },
-        { name: "Javascript", subtechnologies: ["Typescript", "React"] },
-        { name: "Mobile", subtechnologies: ["React Native"] },
+        { name: "CSS", subskills: ["Tailwind"] },
+        { name: "Javascript", subskills: ["Typescript", "React"] },
+        { name: "Mobile", subskills: ["React Native"] },
       ],
     },
     {
       name: "Back End",
-      technologies: [
-        { name: "C#", subtechnologies: [".NET"] },
-        { name: "Node.js", subtechnologies: ["Express"] },
-        { name: "Python", subtechnologies: ["FastAPI", "Flask"] },
+      skills: [
+        { name: "C#", subskills: [".NET"] },
+        { name: "Node.js", subskills: ["Express"] },
+        { name: "Python", subskills: ["FastAPI", "Flask"] },
       ],
     },
     {
       name: "Database",
-      technologies: [
-        { name: "SQL", subtechnologies: ["SQL Server", "Postgres", "MySQL"] },
-        { name: "Cache", subtechnologies: ["Redis"] },
+      skills: [
+        { name: "SQL", subskills: ["SQL Server", "Postgres", "MySQL"] },
+        { name: "Cache", subskills: ["Redis"] },
       ],
     },
     {
       name: "DevOps",
-      technologies: [
-        { name: "Cloud", subtechnologies: ["AWS", "Azure"] },
-        { name: "Message Broker", subtechnologies: ["RabbitMQ"] },
-        { name: "Infra as Code", subtechnologies: ["Docker", "Terraform"] },
-        { name: "Message Broker", subtechnologies: ["RabbitMQ"] },
-        { name: "Linux", subtechnologies: ["Ubuntu"] },
-        { name: "Web Server", subtechnologies: ["IIS", "Nginx"] },
-        { name: "CI/CD", subtechnologies: ["GitHub Actions", "TeamCity"] },
-        { name: "Monitoring", subtechnologies: ["Grafana", "Zabbix"] },
-        { name: "Code Quality", subtechnologies: ["SonarQube"] },
+      skills: [
+        { name: "Cloud", subskills: ["AWS", "Azure"] },
+        { name: "Message Broker", subskills: ["RabbitMQ"] },
+        { name: "Infra as Code", subskills: ["Docker", "Terraform"] },
+        { name: "Message Broker", subskills: ["RabbitMQ"] },
+        { name: "Linux", subskills: ["Ubuntu"] },
+        { name: "Web Server", subskills: ["IIS", "Nginx"] },
+        { name: "CI/CD", subskills: ["GitHub Actions", "TeamCity"] },
+        { name: "Monitoring", subskills: ["Grafana", "Zabbix"] },
+        { name: "Code Quality", subskills: ["SonarQube"] },
       ],
     },
   ],

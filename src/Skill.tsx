@@ -1,20 +1,20 @@
-const Technology = (technology: {
+const Skill = (skill: {
   name: string;
-  subtechnologies?: string[];
+  subskills?: string[];
 }) => {
   return (
     <div className="inline-block">
       <div className="inline-block">
         <div className="bg-gray-800 rounded text-white mb-1 p-1 mr-1">
-          {technology.name}
+          {skill.name}
         </div>
       </div>
-      {technology.subtechnologies &&
-        technology.subtechnologies.map((subtechnology, i) => {
+      {skill.subskills &&
+        skill.subskills.map((subskill, i) => {
           return (
             <div className="inline-block" key={i}>
               <div className="bg-gray-600 rounded text-white mb-1 p-1 mr-1">
-                {subtechnology}
+                {subskill}
               </div>
             </div>
           );
@@ -23,4 +23,4 @@ const Technology = (technology: {
   );
 };
 
-export default Technology;
+export default Skill;

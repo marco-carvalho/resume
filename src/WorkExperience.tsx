@@ -1,20 +1,21 @@
 import { DateTime } from "luxon";
 
-const Experience = (experience: {
+const WorkExperience = (experience: {
   position: string;
   company: string;
   from: Date;
   to?: Date;
   description: string;
-  technologies: {
+  skills: {
     name: string;
-    subtechnologies?: string[];
+    subskills?: string[];
   }[];
 }) => {
   return (
     <div>
-      <div className="text-xl font-bold leading-none">
-        {experience.position} - {experience.company}
+      <div className="text-xl font-bold leading-none">{experience.company}</div>
+      <div className="text-xl font-semibold leading-none">
+        {experience.position}
       </div>
       <div className="space-x-1 italic">
         <div className="inline-block">
@@ -32,4 +33,4 @@ const Experience = (experience: {
   );
 };
 
-export default Experience;
+export default WorkExperience;

@@ -3,8 +3,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { DateTime } from "luxon";
 
-import Experience from "./Experience";
-import Technology from "./Technology";
+import WorkExperience from "./WorkExperience";
+import Skill from "./Skill";
 import CV from "./CV";
 
 function App() {
@@ -42,17 +42,11 @@ function App() {
       </div>
       <div className="space-y-1">
         <div className="bg-black uppercase text-center text-white rounded mb-2 text-xl">
-          <div className="font-bold p-1">Resume</div>
-        </div>
-        <div className="font-normal">{CV.resume}</div>
-      </div>
-      <div className="space-y-1">
-        <div className="bg-black uppercase text-center text-white rounded mb-2 text-xl">
-          <div className="font-bold p-1">Professional History</div>
+          <div className="font-bold p-1">Work Experience</div>
         </div>
         <div className="space-y-2">
           {CV.experiences.map((experience, i) => (
-            <Experience key={i} {...experience} />
+            <WorkExperience key={i} {...experience} />
           ))}
         </div>
       </div>
@@ -63,8 +57,8 @@ function App() {
         {CV.skills.map((skill) => {
           return (
             <div className="text-center">
-              {skill.technologies.map((technology) => {
-                return <Technology {...technology} />;
+              {skill.skills.map((skill) => {
+                return <Skill {...skill} />;
               })}
             </div>
           );
