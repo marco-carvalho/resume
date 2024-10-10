@@ -118,6 +118,7 @@ export default {
   languages: [
     { name: "Portuguese", level: "fluent" },
     { name: "English", level: "advanced" },
+    { name: "Spanish", level: "basic" },
   ],
   skills: [
     {
