@@ -22,6 +22,7 @@ export default {
         { name: "Python", subskills: ["Flask"] },
         { name: "Node", subskills: ["Express"] },
         { name: "SQL", subskills: ["SQL Server", "Postgres"] },
+        { name: "NoSQL", subskills: ["Redis"] },
         { name: "Infra as Code", subskills: ["Docker", "Terraform"] },
         { name: "Message Broker", subskills: ["RabbitMQ"] },
         { name: "Web Server", subskills: ["IIS", "Nginx"] },
@@ -29,7 +30,6 @@ export default {
         { name: "Monitoring", subskills: ["Grafana", "Zabbix"] },
         { name: "Code Quality", subskills: ["SonarQube"] },
         { name: "Cloud", subskills: ["AWS", "Azure"] },
-        { name: "Cache", subskills: ["Redis"] },
       ],
     },
     {
@@ -142,7 +142,7 @@ export default {
       name: "Database",
       skills: [
         { name: "SQL", subskills: ["SQL Server", "Postgres", "MySQL"] },
-        { name: "Cache", subskills: ["Redis"] },
+        { name: "NoSQL", subskills: ["Redis"] },
       ],
     },
     {
