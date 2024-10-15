@@ -151,7 +151,6 @@ export default {
         { name: "Cloud", subskills: ["AWS", "Azure"] },
         { name: "Message Broker", subskills: ["RabbitMQ"] },
         { name: "Infra as Code", subskills: ["Docker", "Terraform"] },
-        { name: "Message Broker", subskills: ["RabbitMQ"] },
         { name: "Linux", subskills: ["Ubuntu"] },
         { name: "Web Server", subskills: ["IIS", "Nginx"] },
         { name: "CI/CD", subskills: ["GitHub Actions", "TeamCity"] },
