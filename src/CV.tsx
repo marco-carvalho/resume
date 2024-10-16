@@ -72,7 +72,7 @@ export default {
       from: new Date(2017, 5, 1),
       to: new Date(2018, 6, 1),
       description:
-        "Contributed to the Digital Bank project, developing services and APIs, creating internal system functionalities, and initiating JAMstack migrations.",
+        "Contributed to the Digital Bank project, developing services and APIs, creating internal system functionalities, and initiating Headless CMS projects.",
       skills: [
         { name: "HTML" },
         { name: "CSS", subskills: ["Bootstrap"] },
