@@ -8,7 +8,7 @@ export default {
   experiences: [
     {
       company: "Turim MFO",
-      position: "Tech Lead & Senior Software Engineer",
+      position: "Lead Software Engineer",
       from: new Date(2019, 5, 1),
       to: undefined,
       description:
