@@ -83,7 +83,7 @@ export default {
     },
     {
       company: "CEFET/RJ",
-      position: "Scientific Initiation Scholarship Holder",
+      position: "Undergraduate Researcher",
       from: new Date(2017, 0, 1),
       to: new Date(2017, 5, 1),
       description:
