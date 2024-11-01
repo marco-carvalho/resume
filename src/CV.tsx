@@ -12,7 +12,7 @@ export default {
       from: new Date(2019, 5, 1),
       to: undefined,
       description:
-        "Lead a team in designing and implementing full-stack solutions, ensuring software robustness, scalability, and performance. Collaborate with stakeholders, mentor junior developers, and promote continuous improvement.",
+        "Developed web and mobile apps, managing systems, CI/CD, cloud, and aligning tech with business goals, while overseeing hiring, mentoring, risk, code quality, and team culture.",
       skills: [
         { name: "HTML" },
         { name: "CSS", subskills: ["TailwindCSS"] },
@@ -141,14 +141,27 @@ export default {
     {
       name: "Database",
       skills: [
-        { name: "SQL", subskills: ["SQL Server", "Postgres", "MySQL"] },
+        { name: "SQL", subskills: ["SQL Server", "Postgres"] },
         { name: "NoSQL", subskills: ["Redis"] },
       ],
     },
     {
       name: "DevOps",
       skills: [
-        { name: "Cloud", subskills: ["AWS", "Azure"] },
+        {
+          name: "AWS",
+          subskills: [
+            "S3",
+            "Cognito",
+            "WAF",
+            "API Gateway",
+            "IAM",
+            "Lambda",
+            "CloudWatch",
+            "X-Ray",
+            "RDS",
+          ],
+        },
         { name: "Message Broker", subskills: ["RabbitMQ"] },
         { name: "Infra as Code", subskills: ["Docker", "Terraform"] },
         { name: "Linux", subskills: ["Ubuntu"] },
