@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { DateTime } from "luxon";
 
 import WorkExperience from "./WorkExperience";
 import Skill from "./Skill";
 import CV from "./CV";
+import AcademicExperience from "./AcademicExperience";
 
 function App() {
   return (
@@ -71,21 +71,9 @@ function App() {
               <div className="bg-black uppercase text-center text-white rounded mb-2 text-xl">
                 <div className="font-bold p-1">Education</div>
               </div>
-              {CV.educations.map((education, i) => {
-                return (
-                  <div key={i}>
-                    <div className="font-bold">{education.university}</div>
-                    <div className="font-semibold">{education.degree} - {education.course}</div>
-                    <div className="d-block">
-                      {DateTime.fromJSDate(education.from).toFormat(
-                        "MMMM/yyyy"
-                      )}{" "}
-                      -{" "}
-                      {DateTime.fromJSDate(education.to).toFormat("MMMM/yyyy")}
-                    </div>
-                  </div>
-                );
-              })}
+              {CV.educations.map((education, i) => (
+                <AcademicExperience key={i} {...education} />
+              ))}
             </div>
           </div>
         </div>

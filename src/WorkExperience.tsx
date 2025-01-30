@@ -1,23 +1,22 @@
 import { DateTime } from "luxon";
 
-const WorkExperience = (experience: {
+export interface WorkExperienceProps {
   position: string;
   company: string;
   from: Date;
   to?: Date;
   description: string;
-  skills: {
-    name: string;
-    subskills?: string[];
-  }[];
-}) => {
+}
+
+const WorkExperience = (experience: WorkExperienceProps) => {
   return (
-    <div>
+    <div className="relative">
       <div className="text-xl font-bold leading-none">{experience.company}</div>
-      <div className="text-xl font-semibold leading-none">
+      <div className="text-lg font-semibold leading-none">
         {experience.position}
       </div>
-      <div className="space-x-1 italic">
+      <div className="break-keep">{experience.description}</div>
+      <div className="absolute top-0 right-0 italic space-x-1">
         <div className="inline-block">
           {DateTime.fromJSDate(experience.from).toFormat("MMMM/yyyy")}
         </div>
@@ -28,7 +27,6 @@ const WorkExperience = (experience: {
             : "today"}
         </div>
       </div>
-      <div className="break-keep">{experience.description}</div>
     </div>
   );
 };

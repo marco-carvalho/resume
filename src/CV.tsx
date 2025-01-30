@@ -1,3 +1,27 @@
+import { AcademicExperienceProps } from "./AcademicExperience";
+import { WorkExperienceProps } from "./WorkExperience";
+
+type CV = {
+  name: string;
+  mail: string;
+  github: string;
+  linkedin: string;
+  resume: string;
+  experiences: WorkExperienceProps[];
+  educations: AcademicExperienceProps[];
+  languages: {
+    name: string;
+    level: string;
+  }[];
+  skills: {
+    name: string;
+    skills: {
+      name: string;
+      subskills?: string[];
+    }[];
+  }[];
+}
+
 export default {
   name: "Marco Lúcio de Carvalho Júnior",
   mail: "marcolucio27@gmail.com",
@@ -7,30 +31,20 @@ export default {
     "A computer scientist passionate about web development, motivated by the good uses of new technologies, with extensive experience in the financial market, an open-source enthusiast, and focused on improving and applying my knowledge and skills in opportunities that help me grow professionally.",
   experiences: [
     {
+      company: "Nubank",
+      position: "Software Engineer",
+      from: new Date(2025, 0, 1),
+      to: null,
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum magna non nisl interdum, sit amet finibus eros volutpat. Praesent vestibulum elit erat, quis placerat nibh venenatis sit amet. Sed semper feugiat ipsum, non pharetra augue gravida ac.",
+    },
+    {
       company: "Turim MFO",
       position: "Lead Software Engineer",
       from: new Date(2019, 5, 1),
-      to: undefined,
+      to: new Date(2024, 11, 1),
       description:
         "Developed web and mobile apps, managing systems, CI/CD, cloud, and aligning tech with business goals, while overseeing hiring, mentoring, risk, code quality, and team culture.",
-      skills: [
-        { name: "HTML" },
-        { name: "CSS", subskills: ["TailwindCSS"] },
-        { name: "Javascript", subskills: ["Typescript", "React"] },
-        { name: "Mobile", subskills: ["React Native"] },
-        { name: "C#", subskills: [".NET"] },
-        { name: "Python", subskills: ["Flask"] },
-        { name: "Node", subskills: ["Express"] },
-        { name: "SQL", subskills: ["SQL Server", "Postgres"] },
-        { name: "NoSQL", subskills: ["Redis"] },
-        { name: "Infra as Code", subskills: ["Docker", "Terraform"] },
-        { name: "Message Broker", subskills: ["RabbitMQ"] },
-        { name: "Web Server", subskills: ["IIS", "Nginx"] },
-        { name: "CI/CD", subskills: ["GitHub Actions", "TeamCity"] },
-        { name: "Monitoring", subskills: ["Grafana", "Zabbix"] },
-        { name: "Code Quality", subskills: ["SonarQube"] },
-        { name: "Cloud", subskills: ["AWS", "Azure"] },
-      ],
     },
     {
       company: "BTG Pactual",
@@ -39,17 +53,6 @@ export default {
       to: new Date(2019, 5, 1),
       description:
         "Developed and maintained interfaces and APIs for Asset Management, Wealth Management, and Investment Banking, enhancing user experience and efficiency.",
-      skills: [
-        { name: "HTML", subskills: ["Pug"] },
-        { name: "CSS", subskills: ["Bootstrap"] },
-        { name: "Javascript", subskills: ["VueJS"] },
-        { name: "C#" },
-        { name: "Node.js", subskills: ["Express"] },
-        { name: "SQL", subskills: ["SQL Server", "Postgres"] },
-        { name: "Infra as Code", subskills: ["Docker", "Rancher"] },
-        { name: "CI/CD", subskills: ["Azure DevOps"] },
-        { name: "Cloud", subskills: ["AWS"] },
-      ],
     },
     {
       company: "Stone Pagamentos",
@@ -58,13 +61,6 @@ export default {
       to: new Date(2018, 11, 1),
       description:
         "Developed interfaces and APIs for monitoring transactional behavior in the Risk squad, improving fraud detection and prevention.",
-      skills: [
-        { name: "C#", subskills: ["WCF"] },
-        { name: "Python" },
-        { name: "SQL", subskills: ["SQL Server"] },
-        { name: "CI/CD", subskills: ["Azure DevOps", "GoCD"] },
-        { name: "Logs", subskills: ["Splunk"] },
-      ],
     },
     {
       company: "Banco Modal",
@@ -73,13 +69,6 @@ export default {
       to: new Date(2018, 6, 1),
       description:
         "Contributed to the Digital Bank project, developing services and APIs, creating internal system functionalities, and initiating Headless CMS projects.",
-      skills: [
-        { name: "HTML" },
-        { name: "CSS", subskills: ["Bootstrap"] },
-        { name: "Javascript", subskills: ["React"] },
-        { name: "C#", subskills: ["Web API", "WCF"] },
-        { name: "SQL", subskills: ["SQL Server"] },
-      ],
     },
     {
       company: "CEFET/RJ",
@@ -88,7 +77,6 @@ export default {
       to: new Date(2017, 5, 1),
       description:
         "Implemented the Machine Learning framework Diffusion Map for dimensionality reduction, analyzing datasets like the Iris flower dataset and astronomical data.",
-      skills: [{ name: "R" }],
     },
     {
       company: "Itaú Unibanco",
@@ -97,13 +85,6 @@ export default {
       to: new Date(2016, 11, 1),
       description:
         "Developed and maintained web projects for Social Security clients, focusing on bug fixes and performance improvements.",
-      skills: [
-        { name: "HTML" },
-        { name: "CSS" },
-        { name: "Javascript", subskills: ["Knockout"] },
-        { name: "C#" },
-        { name: "SQL", subskills: ["SQL Server"] },
-      ],
     },
   ],
   educations: [
@@ -172,4 +153,4 @@ export default {
       ],
     },
   ],
-};
+} as CV;
