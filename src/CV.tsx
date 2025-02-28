@@ -117,13 +117,14 @@ export default {
         { name: "C#", subskills: [".NET"] },
         { name: "Node.js", subskills: ["Express"] },
         { name: "Python", subskills: ["FastAPI", "Flask"] },
+        { name: "Clojure" },
       ],
     },
     {
       name: "Database",
       skills: [
         { name: "SQL", subskills: ["SQL Server", "Postgres"] },
-        { name: "NoSQL", subskills: ["Redis"] },
+        { name: "NoSQL", subskills: ["Redis", "Datomic"] },
       ],
     },
     {
