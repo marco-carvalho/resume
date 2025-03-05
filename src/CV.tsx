@@ -36,7 +36,7 @@ export default {
       from: new Date(2025, 0, 1),
       to: null,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum magna non nisl interdum, sit amet finibus eros volutpat. Praesent vestibulum elit erat, quis placerat nibh venenatis sit amet. Sed semper feugiat ipsum, non pharetra augue gravida ac.",
+        "Developed and maintained UIs and APIs for web and mobile apps in the PJ area.",
     },
     {
       company: "Turim MFO",
@@ -44,7 +44,7 @@ export default {
       from: new Date(2019, 5, 1),
       to: new Date(2024, 11, 1),
       description:
-        "Developed web and mobile apps, managing systems, CI/CD, cloud, and aligning tech with business goals, while overseeing hiring, mentoring, risk, code quality, and team culture.",
+        "Developed and maintained UIs and APIs for web and mobile apps, managing systems, CI/CD, cloud, and aligning tech with business goals, while overseeing hiring, mentoring, risk, code quality, and team culture.",
     },
     {
       company: "BTG Pactual",
@@ -52,7 +52,7 @@ export default {
       from: new Date(2019, 0, 1),
       to: new Date(2019, 5, 1),
       description:
-        "Developed and maintained interfaces and APIs for Asset Management, Wealth Management, and Investment Banking, enhancing user experience and efficiency.",
+        "Developed and maintained UIs and APIs for Asset Management, Wealth Management, and Investment Banking, enhancing user experience and efficiency.",
     },
     {
       company: "Stone Pagamentos",
@@ -60,7 +60,7 @@ export default {
       from: new Date(2018, 7, 1),
       to: new Date(2018, 11, 1),
       description:
-        "Developed interfaces and APIs for monitoring transactional behavior in the Risk squad, improving fraud detection and prevention.",
+        "Developed and maintained UIs and APIs for monitoring transactional behavior in the Risk squad, improving fraud detection and prevention.",
     },
     {
       company: "Banco Modal",
@@ -68,7 +68,7 @@ export default {
       from: new Date(2017, 5, 1),
       to: new Date(2018, 6, 1),
       description:
-        "Contributed to the Digital Bank project, developing services and APIs, creating internal system functionalities, and initiating Headless CMS projects.",
+        "Developed and maintained UIs and APIs for the Digital Bank project and the internal system, and initiating Headless CMS projects.",
     },
     {
       company: "CEFET/RJ",
@@ -84,7 +84,7 @@ export default {
       from: new Date(2015, 0, 1),
       to: new Date(2016, 11, 1),
       description:
-        "Developed and maintained web projects for Social Security clients, focusing on bug fixes and performance improvements.",
+        "Developed and maintained UIs and APIs for Social Security clients, focusing on bug fixes and performance improvements.",
     },
   ],
   educations: [
