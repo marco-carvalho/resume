@@ -144,7 +144,7 @@ export default {
             "RDS",
           ],
         },
-        { name: "Message Broker", subskills: ["RabbitMQ"] },
+        { name: "Message Broker", subskills: ["RabbitMQ", "Kafka"] },
         { name: "Infra as Code", subskills: ["Docker", "Terraform"] },
         { name: "Linux", subskills: ["Ubuntu"] },
         { name: "Web Server", subskills: ["IIS", "Nginx"] },
