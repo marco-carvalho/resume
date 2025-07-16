@@ -108,7 +108,7 @@ export default {
         { name: "HTML" },
         { name: "CSS", subskills: ["Tailwind"] },
         { name: "Javascript", subskills: ["Typescript", "React"] },
-        { name: "Mobile", subskills: ["React Native"] },
+        { name: "Mobile", subskills: ["React Native", "Flutter"] },
       ],
     },
     {
