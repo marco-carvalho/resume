@@ -10,7 +10,7 @@ export interface WorkExperienceProps {
 
 const WorkExperience = (experience: WorkExperienceProps) => {
   return (
-    <div className="relative">
+    <div className="relative break-inside-avoid">
       <div className="text-xl font-bold leading-none">{experience.company}</div>
       <div className="text-lg font-semibold leading-none">
         {experience.position}

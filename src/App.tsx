@@ -42,6 +42,12 @@ function App() {
       </div>
       <div className="space-y-1">
         <div className="bg-black uppercase text-center text-white rounded mb-2 text-xl">
+          <div className="font-bold p-1">About</div>
+        </div>
+        <div className="break-keep">{CV.about}</div>
+      </div>
+      <div className="space-y-1">
+        <div className="bg-black uppercase text-center text-white rounded mb-2 text-xl">
           <div className="font-bold p-1">Work Experience</div>
         </div>
         <div className="space-y-2">
