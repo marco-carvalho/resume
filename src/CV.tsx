@@ -6,20 +6,12 @@ type CV = {
   mail: string;
   github: string;
   linkedin: string;
-  resume: string;
-  about: string;
+  location: string;
   experiences: WorkExperienceProps[];
   educations: AcademicExperienceProps[];
   languages: {
     name: string;
     level: string;
-  }[];
-  skills: {
-    name: string;
-    skills: {
-      name: string;
-      subskills?: string[];
-    }[];
   }[];
 }
 
@@ -28,66 +20,100 @@ export default {
   mail: "marcolucio27@gmail.com",
   github: "marco-carvalho",
   linkedin: "marco-carvalho",
-  resume:
-    "A computer scientist passionate about web development, motivated by the good uses of new technologies, with extensive experience in the financial market, an open-source enthusiast, and focused on improving and applying my knowledge and skills in opportunities that help me grow professionally.",
-  about:
-    "Over 10+ years in financial technology, I worked across banks, payments, asset management, and business banking platforms, from internships to senior and lead engineering roles. I was responsible for building, maintaining, and scaling reliable web, mobile, backend, and platform solutions that supported critical financial workflows for internal teams, external clients, and business customers. I developed features, APIs, microservices, frontend applications, CI/CD pipelines, cloud infrastructure, monitoring, tests, and observability, while also mentoring engineers, supporting hiring, managing technical risks, and aligning engineering decisions with business priorities. As a result, I helped improve platform stability, performance, maintainability, fraud and risk analysis workflows, digital banking infrastructure, team maturity, and scalable payment-management capabilities across organizations.",
+  location: "Rio de Janeiro, Brazil",
   experiences: [
     {
       company: "Nubank",
       position: "Software Engineer",
       from: new Date(2025, 0, 1),
       to: null,
-      description:
-        "I worked on the Charging Assistant platform, a B2B payment management solution that enables around 6 million business customers to create, manage, and track charges with flexible payment terms, methods, late-payment fines and interest, invoice issuance, and automated payment notifications and reminders. My responsibility was to help maintain and evolve the platform within a scalable, event-driven microservices architecture, including separate frontend applications, BFF layers for mobile and web experiences, a core domain service, and downstream services for notifications and fiscal documents. I developed new features, fixed bugs, and improved performance, strengthening reliability through unit and integration testing, latency instrumentation (Apdex), and observability dashboards, while raising engineering standards across the broader codebase by authoring and enforcing testing and architecture linters and building internal developer tooling used across multiple services and teams. As a result, I improved the platform's stability, performance visibility, and maintainability while helping it scale reliably, supporting the product's goal of helping businesses get paid faster and improve cash-flow predictability.",
+      stack:
+        "Clojure, Datomic, Kafka, TypeScript, React, Flutter, Databricks, AWS, Kubernetes, Grafana, Prometheus",
+      bullets: [
+        "The Charging Assistant platform, a B2B payment management product that enables 6M+ business customers to create, manage, and track charges, runs on an event-driven microservices architecture spanning frontend applications, mobile and web BFF layers, a core domain service, and downstream notification and fiscal-document services.",
+        "Maintain and evolve the platform, from product discovery and collaborative solution design (whiteboarding) to backlog refinement and implementation, while raising engineering standards across the broader codebase.",
+        "Led a data-backed latency discovery, authored the RFC and ADR, and built a new event-driven read-store service that replaces on-the-fly aggregations with constant-time reads; authored and enforced testing and architecture linters adopted across multiple services and teams; built internal developer tooling used by engineers across teams; instrumented latency (Apdex) and built observability dashboards.",
+        "Improved the platform's stability, performance visibility, and maintainability, helping it scale reliably so businesses get paid faster and improve cash-flow predictability.",
+      ],
     },
     {
       company: "Turim MFO",
       position: "Lead Software Engineer",
       from: new Date(2019, 5, 1),
       to: new Date(2024, 11, 1),
-      description:
-        "I was responsible for guiding a team in the development of scalable web and mobile applications while overseeing frontend and backend systems, infrastructure as code, cloud services, and CI/CD pipelines. My goal was to ensure that technical decisions supported business priorities while maintaining strong standards for performance, reliability, and code quality. I collaborated closely with business stakeholders, managed risks, supported hiring and talent development, mentored junior developers, resolved team conflicts, and helped define the long-term technical vision. As a result, I contributed to the delivery of reliable financial technology solutions while strengthening the team's technical maturity, collaboration, and overall engineering culture.",
+      stack:
+        "C#/.NET 8, TypeScript, React, React Native, Node.js, Python, SQL Server, PostgreSQL, Redis, AWS, Azure, Terraform, Docker, RabbitMQ",
+      bullets: [
+        "A multi-family office whose engineering team owned end to end, primarily, the internal platform employees use to generate the monthly and semiannual investment reports presented in meetings with client families, and a mobile app used exclusively by those families, along with the supporting cloud infrastructure and CI/CD pipelines.",
+        "Promoted from Software Engineer (2019) to Senior (2021) and Lead (2023), guiding the team and ensuring technical decisions supported business priorities with strong standards for performance, reliability, and code quality.",
+        "Led the development of the company's mobile app, oversaw frontend and backend systems, designed infrastructure as code and CI/CD pipelines, mentored junior developers, supported hiring and talent development, and defined the long-term technical vision.",
+        "Delivered reliable financial technology solutions, including a client-facing mobile app that strengthened the firm's relationship with its clients, while raising the team's technical maturity, collaboration, and overall engineering culture.",
+      ],
     },
     {
       company: "BTG Pactual",
       position: "Junior Software Engineer",
       from: new Date(2019, 0, 1),
       to: new Date(2019, 5, 1),
-      description:
-        "In the Asset Management team, I was responsible for developing and maintaining interfaces and APIs used by both internal employees and external clients across Asset Management, Wealth Management, and Investment Banking. My role involved understanding the needs of different business areas and translating them into reliable technical solutions that supported daily operations and client-facing services. I contributed to the evolution of these systems through feature development, maintenance, and improvements to usability, integration, and system stability. As a result, I helped deliver tools and APIs that supported key financial workflows and improved the efficiency and reliability of services used by multiple stakeholders.",
+      stack: "C#, Node.js, Vue.js, SQL Server, PostgreSQL, Docker, AWS",
+      bullets: [
+        "The Asset Management team maintained interfaces and APIs used by internal employees and external clients across Asset Management, Wealth Management, and Investment Banking.",
+        "Understand the needs of different business areas and translate them into reliable technical solutions supporting daily operations and client-facing services.",
+        "Developed new features, maintained existing systems, and improved usability, integration, and stability.",
+        "Delivered tools and APIs that supported key financial workflows and improved the efficiency and reliability of services used by multiple stakeholders.",
+      ],
     },
     {
       company: "Stone Pagamentos",
       position: "Junior Software Engineer",
       from: new Date(2018, 7, 1),
       to: new Date(2018, 11, 1),
-      description:
-        "In the Risk squad, I was responsible for developing and maintaining interfaces and APIs that supported the identification and analysis of tenants with suspicious transactional behavior. My role was to provide reliable technical solutions for internal teams in Monitoring, Accreditation, Prevention, and Anti-Fraud, helping them investigate risk signals more effectively. I worked on maintaining existing systems, implementing improvements, and ensuring that the tools supported operational needs with accuracy and stability. As a result, I contributed to stronger fraud prevention workflows, improved internal analysis capabilities, and more reliable support for risk-related decision-making.",
+      stack: "C# (Web API, WCF), Python, JavaScript, SQL Server, Splunk",
+      bullets: [
+        "The Risk squad provided the tooling used by the internal Monitoring, Accreditation, Prevention, and Anti-Fraud teams to investigate risk signals.",
+        "Develop and maintain the interfaces and APIs used to identify and analyze tenants with suspicious transactional behavior.",
+        "Maintained existing systems, implemented improvements, and ensured the tools supported operational needs with accuracy and stability.",
+        "Strengthened fraud-prevention workflows, improved internal analysis capabilities, and provided more reliable support for risk-related decision-making.",
+      ],
     },
     {
       company: "Banco Modal",
-      position: "Intern Software Engineer",
+      position: "Software Engineering Intern",
       from: new Date(2017, 5, 1),
       to: new Date(2018, 6, 1),
-      description:
-        "In the Development squad, I worked directly on the Digital Bank project, where I was responsible for developing and maintaining services and APIs that supported the company's internal systems. My role involved creating new functionalities, improving existing services, and ensuring that backend solutions remained reliable and aligned with business needs. I also initiated projects to migrate the bank's institutional websites to a JAMstack architecture, aiming to improve performance, scalability, and maintainability. As a result, I contributed to the evolution of the Digital Bank platform while supporting more modern and efficient web infrastructure for the institution.",
+      stack: "C# (Web API, WCF), React, SQL Server",
+      bullets: [
+        "The Development squad built the Digital Bank project, whose services and APIs supported the company's internal systems.",
+        "Develop and maintain services and APIs, keeping backend solutions reliable and aligned with business needs.",
+        "Created new functionality, improved existing services, and initiated the migration of the bank's institutional websites to a JAMstack architecture.",
+        "Contributed to the evolution of the Digital Bank platform and delivered faster, more scalable, and more maintainable web infrastructure.",
+      ],
     },
     {
       company: "CEFET/RJ",
       position: "Undergraduate Researcher",
       from: new Date(2017, 0, 1),
       to: new Date(2017, 5, 1),
-      description:
-        "The research project focused on applying the Machine Learning framework Diffusion Map to reduce the dimensionality of complex datasets, including the Iris flower dataset and astronomical datasets composed of star characteristics such as coordinates and luminosity information. My role involved implementing the framework, preparing and analyzing the datasets, and evaluating how dimensionality reduction could reveal underlying patterns in the data. I worked with both benchmark and scientific datasets to better understand the behavior and applicability of the method across different contexts. As a result, the project contributed to the exploration of Diffusion Map as a useful technique for simplifying high-dimensional data while preserving relevant structural relationships.",
+      stack: "R, Machine Learning",
+      bullets: [
+        "A research project focused on applying the Diffusion Map machine learning framework to reduce the dimensionality of complex datasets.",
+        "Implement the framework and evaluate how dimensionality reduction could reveal underlying patterns in the data.",
+        "Prepared and analyzed benchmark (Iris) and astronomical datasets composed of star characteristics such as coordinates and luminosity, comparing the method's behavior across contexts.",
+        "Contributed to validating Diffusion Map as a technique for simplifying high-dimensional data while preserving structural relationships.",
+      ],
     },
     {
       company: "Itaú Unibanco",
-      position: "Intern Software Engineer",
+      position: "Software Engineering Intern",
       from: new Date(2015, 0, 1),
       to: new Date(2016, 11, 1),
-      description:
-        "In the Commercial Proposals squad, I was responsible for developing and maintaining web projects for multiple clients in the Social Security area. My role involved supporting existing applications, correcting bugs, and improving performance to ensure better stability and usability for end users. I worked on technical improvements that helped keep the projects reliable and aligned with client needs. As a result, I contributed to more stable, efficient, and maintainable web solutions for clients in the Social Security sector.",
+      stack: "C#, JavaScript (jQuery, Knockout), SQL Server",
+      bullets: [
+        "The Commercial Proposals squad served multiple clients in the Social Security area with web projects.",
+        "Develop and maintain these projects, keeping them reliable and aligned with client needs.",
+        "Supported existing applications, diagnosed and corrected bugs, and implemented performance and stability improvements.",
+        "Delivered more stable, efficient, and maintainable web solutions with better usability for end users.",
+      ],
     },
   ],
   educations: [
@@ -100,61 +126,8 @@ export default {
     },
   ],
   languages: [
-    { name: "Portuguese", level: "fluent" },
+    { name: "Portuguese", level: "native" },
     { name: "English", level: "advanced" },
     { name: "Spanish", level: "basic" },
-  ],
-  skills: [
-    {
-      name: "Front End",
-      skills: [
-        { name: "HTML" },
-        { name: "CSS", subskills: ["Tailwind"] },
-        { name: "Javascript", subskills: ["Typescript", "React"] },
-        { name: "Mobile", subskills: ["React Native", "Flutter"] },
-      ],
-    },
-    {
-      name: "Back End",
-      skills: [
-        { name: "C#", subskills: [".NET"] },
-        { name: "Node.js", subskills: ["Express"] },
-        { name: "Python", subskills: ["FastAPI", "Flask"] },
-        { name: "Clojure" },
-      ],
-    },
-    {
-      name: "Database",
-      skills: [
-        { name: "SQL", subskills: ["SQL Server", "Postgres"] },
-        { name: "NoSQL", subskills: ["Redis", "Datomic"] },
-      ],
-    },
-    {
-      name: "DevOps",
-      skills: [
-        {
-          name: "AWS",
-          subskills: [
-            "S3",
-            "Cognito",
-            "WAF",
-            "API Gateway",
-            "IAM",
-            "Lambda",
-            "CloudWatch",
-            "X-Ray",
-            "RDS",
-          ],
-        },
-        { name: "Message Broker", subskills: ["RabbitMQ", "Kafka"] },
-        { name: "Infra as Code", subskills: ["Docker", "Terraform"] },
-        { name: "Linux", subskills: ["Ubuntu"] },
-        { name: "Web Server", subskills: ["IIS", "Nginx"] },
-        { name: "CI/CD", subskills: ["GitHub Actions", "TeamCity"] },
-        { name: "Monitoring", subskills: ["Grafana", "Zabbix"] },
-        { name: "Code Quality", subskills: ["SonarQube"] },
-      ],
-    },
   ],
 } as CV;

@@ -16,8 +16,8 @@ const AcademicExperience = (experience: AcademicExperienceProps) => {
         {experience.degree} - {experience.course}
       </div>
       <div className="d-block">
-        {DateTime.fromJSDate(experience.from).toFormat("MMMM/yyyy")} -{" "}
-        {DateTime.fromJSDate(experience.to).toFormat("MMMM/yyyy")}
+        {DateTime.fromJSDate(experience.from).toFormat("MMM yyyy")} -{" "}
+        {DateTime.fromJSDate(experience.to).toFormat("MMM yyyy")}
       </div>
     </div>
   );
