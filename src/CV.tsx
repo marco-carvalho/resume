@@ -28,12 +28,12 @@ export default {
       from: new Date(2025, 0, 1),
       to: null,
       stack:
-        "Clojure, Datomic, Kafka, TypeScript, React, Flutter, Databricks, AWS, Kubernetes, Grafana, Prometheus",
+        "Clojure, Datomic, Kafka, Python (FastAPI), TypeScript, React, Flutter, Databricks, Redis, AWS, Kubernetes, Grafana, Prometheus",
       bullets: [
-        "The Charging Assistant platform, a B2B payment management product that enables 6M+ business customers to create, manage, and track charges, runs on an event-driven microservices architecture spanning frontend applications, mobile and web BFF layers, a core domain service, and downstream notification and fiscal-document services.",
-        "Maintain and evolve the platform, from product discovery and collaborative solution design (whiteboarding) to backlog refinement and implementation, while raising engineering standards across the broader codebase.",
-        "Led a data-backed latency discovery, authored the RFC and ADR, and built a new event-driven read-store service that replaces on-the-fly aggregations with constant-time reads; authored and enforced testing and architecture linters adopted across multiple services and teams; built internal developer tooling used by engineers across teams; instrumented latency (Apdex) and built observability dashboards.",
-        "Improved the platform's stability, performance visibility, and maintainability, helping it scale reliably so businesses get paid faster and improve cash-flow predictability.",
+        "Charging Assistant, the payment-management platform in Nu Empresas where millions of businesses create and track charges, automate reminders, apply late-payment rules, issue invoices, and organize accounts receivable, built as event-driven microservices spanning web and mobile clients, BFF layers, a core domain service, and downstream notification and fiscal-document services.",
+        "Evolve the platform end to end, from product discovery and solution design to implementation, testing, and observability, where reliability and correctness matter more as usage and product complexity grow; investigate production issues and use operational data to find performance opportunities.",
+        "Traced a read flow that grew more expensive as customers accumulated charges, using production data and latency instrumentation, authored the RFC and ADR, and built an event-driven read model that moved the aggregation off the request path; also added Apdex instrumentation and dashboards, testing and architecture linters other teams adopted, and internal developer tooling.",
+        "Made reads predictable as data volume grows and improved the platform's stability, observability, and maintainability, so businesses collect receivables with less manual effort and more predictable cash flow.",
       ],
     },
     {
@@ -44,10 +44,10 @@ export default {
       stack:
         "C#/.NET 8, TypeScript, React, React Native, Node.js, Python, SQL Server, PostgreSQL, Redis, AWS, Azure, Terraform, Docker, RabbitMQ",
       bullets: [
-        "A multi-family office whose engineering team owned end to end, primarily, the internal platform employees use to generate the monthly and semiannual investment reports presented in meetings with client families, and a mobile app used exclusively by those families, along with the supporting cloud infrastructure and CI/CD pipelines.",
-        "Promoted from Software Engineer (2019) to Senior (2021) and Lead (2023), guiding the team and ensuring technical decisions supported business priorities with strong standards for performance, reliability, and code quality.",
-        "Led the development of the company's mobile app, oversaw frontend and backend systems, designed infrastructure as code and CI/CD pipelines, mentored junior developers, supported hiring and talent development, and defined the long-term technical vision.",
-        "Delivered reliable financial technology solutions, including a client-facing mobile app that strengthened the firm's relationship with its clients, while raising the team's technical maturity, collaboration, and overall engineering culture.",
+        "A multi-family office whose engineering team owned business-critical financial products end to end: the internal platform used to generate the monthly and semiannual investment reports presented in meetings with client families, the mobile app those families used, and the supporting cloud infrastructure and CI/CD pipelines.",
+        "Promoted from Software Engineer (2019) to Senior (2021) to Lead (2023), setting the team's technical direction and working with business stakeholders to turn their priorities and risks into technical plans.",
+        "Guided architecture across frontend, backend, mobile, infrastructure, and delivery; led the mobile app's development; designed infrastructure as code and CI/CD pipelines; mentored engineers, supported hiring, and managed delivery risk while staying hands-on with the hardest problems.",
+        "Delivered reliable financial systems, including the client-facing app that strengthened the firm's relationship with client families, while improving performance and stability, reducing technical risk, and raising the team's autonomy and engineering maturity.",
       ],
     },
     {
@@ -55,12 +55,11 @@ export default {
       position: "Junior Software Engineer",
       from: new Date(2019, 0, 1),
       to: new Date(2019, 5, 1),
-      stack: "C#, Node.js, Vue.js, SQL Server, PostgreSQL, Docker, AWS",
+      stack:
+        "C#, Node.js (Express), Vue.js, SQL Server, PostgreSQL, Docker, Rancher, Azure DevOps, AWS",
       bullets: [
-        "The Asset Management team maintained interfaces and APIs used by internal employees and external clients across Asset Management, Wealth Management, and Investment Banking.",
-        "Understand the needs of different business areas and translate them into reliable technical solutions supporting daily operations and client-facing services.",
-        "Developed new features, maintained existing systems, and improved usability, integration, and stability.",
-        "Delivered tools and APIs that supported key financial workflows and improved the efficiency and reliability of services used by multiple stakeholders.",
+        "Systems for the administration and daily operations of investment funds, including the platform external clients used to submit operations that fed the bank's internal workflows.",
+        "Built features and integrations with internal systems, investigated production issues, and improved usability and stability, mindful of downstream financial processes and controls.",
       ],
     },
     {
@@ -70,10 +69,8 @@ export default {
       to: new Date(2018, 11, 1),
       stack: "C# (Web API, WCF), Python, JavaScript, SQL Server, Splunk",
       bullets: [
-        "The Risk squad provided the tooling used by the internal Monitoring, Accreditation, Prevention, and Anti-Fraud teams to investigate risk signals.",
-        "Develop and maintain the interfaces and APIs used to identify and analyze tenants with suspicious transactional behavior.",
-        "Maintained existing systems, implemented improvements, and ensured the tools supported operational needs with accuracy and stability.",
-        "Strengthened fraud-prevention workflows, improved internal analysis capabilities, and provided more reliable support for risk-related decision-making.",
+        "Internal systems used by the Risk, Monitoring, Prevention, and Anti-Fraud teams to investigate merchants whose transactional behavior signaled fraud or chargeback risk for the acquirer.",
+        "Developed and maintained the interfaces and services those teams relied on, presenting risk signals clearly enough that analysts could reach fast, consistent decisions during investigations.",
       ],
     },
     {
@@ -83,10 +80,8 @@ export default {
       to: new Date(2018, 6, 1),
       stack: "C# (Web API, WCF), React, SQL Server",
       bullets: [
-        "The Development squad built the Digital Bank project, whose services and APIs supported the company's internal systems.",
-        "Develop and maintain services and APIs, keeping backend solutions reliable and aligned with business needs.",
-        "Created new functionality, improved existing services, and initiated the migration of the bank's institutional websites to a JAMstack architecture.",
-        "Contributed to the evolution of the Digital Bank platform and delivered faster, more scalable, and more maintainable web infrastructure.",
+        "Services for the Digital Bank initiative as the bank expanded into digital retail banking.",
+        "Implemented and improved backend services; proposed and started the migration of the bank's institutional websites to a JAMstack architecture, improving performance and deployment.",
       ],
     },
     {
@@ -96,10 +91,8 @@ export default {
       to: new Date(2017, 5, 1),
       stack: "R, Machine Learning",
       bullets: [
-        "A research project focused on applying the Diffusion Map machine learning framework to reduce the dimensionality of complex datasets.",
-        "Implement the framework and evaluate how dimensionality reduction could reveal underlying patterns in the data.",
-        "Prepared and analyzed benchmark (Iris) and astronomical datasets composed of star characteristics such as coordinates and luminosity, comparing the method's behavior across contexts.",
-        "Contributed to validating Diffusion Map as a technique for simplifying high-dimensional data while preserving structural relationships.",
+        "Research on Diffusion Maps, a nonlinear dimensionality-reduction method that represents high-dimensional data while preserving structural relationships.",
+        "Implemented the method, validated it on benchmarks, then applied it to astronomical star data.",
       ],
     },
     {
@@ -109,10 +102,8 @@ export default {
       to: new Date(2016, 11, 1),
       stack: "C#, JavaScript (jQuery, Knockout), SQL Server",
       bullets: [
-        "The Commercial Proposals squad served multiple clients in the Social Security area with web projects.",
-        "Develop and maintain these projects, keeping them reliable and aligned with client needs.",
-        "Supported existing applications, diagnosed and corrected bugs, and implemented performance and stability improvements.",
-        "Delivered more stable, efficient, and maintainable web solutions with better usability for end users.",
+        "Participant-facing web portals for organizations managing closed pension funds.",
+        "Implemented features, corrected defects, and improved performance and usability in codebases shared across clients, balancing reuse with the plans and business rules specific to each entity.",
       ],
     },
   ],

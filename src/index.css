@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @page {
+  @bottom-left {
+    content: "MARCO CARVALHO'S RESUME";
+    font-size: 10px;
+  }
+
   @bottom-right {
     content: counter(page) " / " counter(pages);
     font-size: 10px;

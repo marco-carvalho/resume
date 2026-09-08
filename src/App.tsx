@@ -10,7 +10,7 @@ function App() {
   return (
     <div
       id="app"
-      className="mx-auto container leading-tight space-y-2 max-w-2xl"
+      className="mx-auto container leading-tight space-y-2 max-w-3xl"
     >
       <div className="text-center text-4xl font-bold uppercase">{CV.name}</div>
       <div className="space-y-1">
