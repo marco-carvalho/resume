@@ -1,10 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @page {
   @bottom-left {
-    content: "MARCO CARVALHO'S RESUME";
+    content: "Marco Carvalho's Resume";
     font-size: 10px;
   }
 

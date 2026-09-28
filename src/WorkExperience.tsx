@@ -1,11 +1,11 @@
 import { Fragment } from "react";
-import { DateTime } from "luxon";
+import { formatMonthYear } from "./formatMonthYear";
 
 export interface WorkExperienceProps {
   position: string;
   company: string;
-  from: Date;
-  to?: Date | null;
+  from: Temporal.PlainYearMonth;
+  to?: Temporal.PlainYearMonth | null;
   stack: string;
   bullets: string[];
 }
@@ -16,10 +16,8 @@ const WorkExperience = (experience: WorkExperienceProps) => {
       <div className="flex justify-between items-baseline">
         <div className="text-xl font-bold">{experience.company}</div>
         <div className="italic">
-          {DateTime.fromJSDate(experience.from).toFormat("MMM yyyy")} -{" "}
-          {experience.to
-            ? DateTime.fromJSDate(experience.to).toFormat("MMM yyyy")
-            : "Present"}
+          {formatMonthYear(experience.from)} -{" "}
+          {experience.to ? formatMonthYear(experience.to) : "Present"}
         </div>
       </div>
       <div className="text-lg font-semibold">{experience.position}</div>

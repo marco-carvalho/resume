@@ -1,11 +1,11 @@
-import { DateTime } from "luxon";
+import { formatMonthYear } from "./formatMonthYear";
 
 export interface AcademicExperienceProps {
   university: string;
   degree: string;
   course: string;
-  from: Date;
-  to: Date;
+  from: Temporal.PlainYearMonth;
+  to: Temporal.PlainYearMonth;
 }
 
 const AcademicExperience = (experience: AcademicExperienceProps) => {
@@ -16,8 +16,7 @@ const AcademicExperience = (experience: AcademicExperienceProps) => {
         {experience.degree} - {experience.course}
       </div>
       <div className="d-block">
-        {DateTime.fromJSDate(experience.from).toFormat("MMM yyyy")} -{" "}
-        {DateTime.fromJSDate(experience.to).toFormat("MMM yyyy")}
+        {formatMonthYear(experience.from)} - {formatMonthYear(experience.to)}
       </div>
     </div>
   );

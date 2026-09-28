@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { Briefcase, Code, Mail, MapPin } from "lucide-react";
 
 import WorkExperience from "./WorkExperience";
 import CV from "./CV";
 import AcademicExperience from "./AcademicExperience";
+
+const iconClassName = "inline-block size-[1em]";
 
 function App() {
   return (
@@ -16,11 +16,11 @@ function App() {
       <div className="space-y-1">
         <div className="text-center flex justify-center gap-x-4">
           <div className="space-x-1 whitespace-nowrap">
-            <FontAwesomeIcon icon={faLocationDot} />
+            <MapPin className={iconClassName} />
             <div className="inline text-gray-500">{CV.location}</div>
           </div>
           <div className="space-x-1 whitespace-nowrap">
-            <FontAwesomeIcon icon={faEnvelope} />
+            <Mail className={iconClassName} />
             <a href={`mailto:${CV.mail}`} className="inline text-gray-500">
               {CV.mail}
             </a>
@@ -28,7 +28,7 @@ function App() {
         </div>
         <div className="text-center flex justify-center gap-x-4">
           <div className="space-x-1 whitespace-nowrap">
-            <FontAwesomeIcon icon={faGithub} />
+            <Code className={iconClassName} />
             <a
               href={`https://github.com/${CV.github}`}
               className="inline text-gray-500"
@@ -37,7 +37,7 @@ function App() {
             </a>
           </div>
           <div className="space-x-1 whitespace-nowrap">
-            <FontAwesomeIcon icon={faLinkedin} />
+            <Briefcase className={iconClassName} />
             <a
               href={`https://linkedin.com/in/${CV.linkedin}`}
               className="inline text-gray-500"
